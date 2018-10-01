@@ -24,51 +24,51 @@
       </ul>
     </nav>
   </header>
-  <main class="contacts">
-    <section class="contacts__fields">
+  <main class="feedback-page">
+    <section class="feedback-page__contacts-row content-wrap">
       <h1 class="title-first">Подбор программы</h1>
-      <p class="contacts__text">
+      <p class="content-wrap__text">
         Заполните анкету и мы подберем программу питания для Вашего кота
       </p>
-      <form class="contacts__form" action="https://echo.htmlacademy.ru" method="POST">
+      <form class="content-wrap__form" action="https://echo.htmlacademy.ru" method="POST">
         <div class="cat-info">
-          <label for="cat-name">Имя:*</label>
-          <input type="text" id="cat-name" name="cat-name" placeholder="Барсик"><br>
-          <label for="cat-weight">Вес (кг):*</label>
-          <input type="text" id="cat-weight" name="cat-weight"><br>
-          <label for="cat-age">Возраст (лет):</label>
-          <input type="text" id="cat-age" name="cat-age">
+          <label class="cat-info__label" for="cat-name">Имя:*</label>
+          <input class="cat-info__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик"><br>
+          <label class="cat-info__label" for="cat-weight">Вес (кг):*</label>
+          <input class="cat-info__input" type="text" id="cat-weight" name="cat-weight"><br>
+          <label class="cat-info__label" for="cat-age">Возраст (лет):</label>
+          <input class="cat-info__input" type="text" id="cat-age" name="cat-age">
         </div>
         <div class="goal-info">
-          <input type="radio" id="drying" name="drying">
-          <label for="drying">Похудение</label><br>
-          <input type="radio" id="gain" name="gain">
-          <label for="gain">Набор массы</label><br>
-          <input type="radio" id="unknown" name="unknown">
-          <label for="unknown">Не знаю (нужен вас совет)</label>
+          <input class="goal-info__input" type="radio" id="drying" name="drying">
+          <label class="goal-info__label" for="drying">Похудение</label><br>
+          <input class="goal-info__input" type="radio" id="gain" name="gain">
+          <label class="goal-info__label" for="gain">Набор массы</label><br>
+          <input class="goal-info__input" type="radio" id="unknown" name="unknown">
+          <label class="goal-info__label" for="unknown">Не знаю (нужен вас совет)</label>
         </div>
         <h3 class="title-third">Контактные данные<br>(владельца кота)</h3>
         <div class="owner-info">
-          <label for="email">E-MAIL:*</label>
-          <input type="text" id="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" required><br>
-          <label for="phone">Телефон:*</label>
-          <input type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+          <label class="owner-info__label" for="email">E-MAIL:*</label>
+          <input class="owner-info__input" type="text" id="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" required><br>
+          <label class="owner-info__label" for="phone">Телефон:*</label>
+          <input class="owner-info__input" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
         </div>
         <div class="owner-text">
-          <label for="comment">Комментарий</label><br>
-          <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <label class="owner-text__comment-label" for="comment">Комментарий</label><br>
+          <textarea class="owner-text__comment-area" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
         <div class="addons">
-          <label for="addon-1">Сахарозаменитель</label>
-          <input type="radio" id="addon-1" name="addon-1" checked><br>
-          <label for="addon-2">Питьевая вода</label>
-          <input type="radio" id="addon-2" name="addon-2"><br>
-          <label for="addon-3">Молоко</label>
-          <input type="radio" id="addon-3" name="addon-3"><br>
-          <label for="addon-4">Витамины</label>
-          <input type="radio" id="addon-4" name="addon-4">
+          <label class="addons__label" for="addon-1">Сахарозаменитель</label>
+          <input class="addons__input" type="radio" id="addon-1" name="addon-1" checked><br>
+          <label class="addons__label" for="addon-2">Питьевая вода</label>
+          <input class="addons__input" type="radio" id="addon-2" name="addon-2"><br>
+          <label class="addons__label" for="addon-3">Молоко</label>
+          <input class="addons__input" type="radio" id="addon-3" name="addon-3"><br>
+          <label class="addons__label" for="addon-4">Витамины</label>
+          <input class="addons__input" type="radio" id="addon-4" name="addon-4">
         </div>
-        <input type="submit" value="отправить заявку">
+        <input class="btn btn--green" type="submit" value="отправить заявку">
         <p class="contacts__text-bottom">* - Обязательные поля</p>
       </form>
     </section>
