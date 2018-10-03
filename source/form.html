@@ -24,58 +24,58 @@
       </ul>
     </nav>
   </header>
-  <main class="feedback-page">
-    <section class="feedback-page__contacts-row content-wrap">
+  <main class="feedback">
+    <section class="feedback__col">
       <h1 class="title-first">Подбор программы</h1>
-      <p class="content-wrap__text">
+      <p class="feedback__text">
         Заполните анкету и мы подберем программу питания для Вашего кота
       </p>
-      <form class="content-wrap__form" action="https://echo.htmlacademy.ru" method="POST">
-        <div class="cat-info">
-          <label class="cat-info__label" for="cat-name">Имя:*</label>
-          <input class="cat-info__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик"><br>
-          <label class="cat-info__label" for="cat-weight">Вес (кг):*</label>
-          <input class="cat-info__input" type="text" id="cat-weight" name="cat-weight"><br>
-          <label class="cat-info__label" for="cat-age">Возраст (лет):</label>
-          <input class="cat-info__input" type="text" id="cat-age" name="cat-age">
+      <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="form__row">
+          <label class="form__label form__label--text" for="cat-name">Имя:*</label>
+          <input class="form__input form__input--text" type="text" id="cat-name" name="cat-name" placeholder="Барсик"><br>
+          <label class="form__label form__label--text" for="cat-weight">Вес (кг):*</label>
+          <input class="form__input form__input--text" type="text" id="cat-weight" name="cat-weight"><br>
+          <label class="form__label form__label--text" for="cat-age">Возраст (лет):</label>
+          <input class="form__input form__input--text" type="text" id="cat-age" name="cat-age">
         </div>
-        <div class="goal-info">
-          <input class="goal-info__input" type="radio" id="drying" name="drying">
-          <label class="goal-info__label" for="drying">Похудение</label><br>
-          <input class="goal-info__input" type="radio" id="gain" name="gain">
-          <label class="goal-info__label" for="gain">Набор массы</label><br>
-          <input class="goal-info__input" type="radio" id="unknown" name="unknown">
-          <label class="goal-info__label" for="unknown">Не знаю (нужен вас совет)</label>
+        <div class="form-row">
+          <input class="form__input form__input--text" type="radio" id="drying" name="drying">
+          <label class="form__label form__label--text" for="drying">Похудение</label><br>
+          <input class="form__input form__input--text" type="radio" id="gain" name="gain">
+          <label class="form__label form__label--text" for="gain">Набор массы</label><br>
+          <input class="form__input form__input--text" type="radio" id="unknown" name="unknown">
+          <label class="form__label form__label--text" for="unknown">Не знаю (нужен вас совет)</label>
         </div>
         <h3 class="title-third">Контактные данные<br>(владельца кота)</h3>
-        <div class="owner-info">
-          <label class="owner-info__label" for="email">E-MAIL:*</label>
-          <input class="owner-info__input" type="text" id="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" required><br>
-          <label class="owner-info__label" for="phone">Телефон:*</label>
-          <input class="owner-info__input" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+        <div class="form-row">
+          <label class="form__label form__label--text" for="email">E-MAIL:*</label>
+          <input class="form__input form__input--text" type="text" id="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" required><br>
+          <label class="form__label form__label--text" for="phone">Телефон:*</label>
+          <input class="form__input form__input--text" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
         </div>
-        <div class="owner-text">
-          <label class="owner-text__comment-label" for="comment">Комментарий</label><br>
-          <textarea class="owner-text__comment-area" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <div class="form-row">
+          <label class="form__label form__label--text" for="comment">Комментарий</label><br>
+          <textarea class="form__input form__input--text" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
-        <div class="addons">
-          <label class="addons__label" for="addon-1">Сахарозаменитель</label>
-          <input class="addons__input" type="radio" id="addon-1" name="addon-1" checked><br>
-          <label class="addons__label" for="addon-2">Питьевая вода</label>
-          <input class="addons__input" type="radio" id="addon-2" name="addon-2"><br>
-          <label class="addons__label" for="addon-3">Молоко</label>
-          <input class="addons__input" type="radio" id="addon-3" name="addon-3"><br>
-          <label class="addons__label" for="addon-4">Витамины</label>
-          <input class="addons__input" type="radio" id="addon-4" name="addon-4">
+        <div class="form-row">
+          <label class="form__label form__label--text" for="addon-1">Сахарозаменитель</label>
+          <input class="form__input form__input--text" type="radio" id="addon-1" name="addon-1" checked><br>
+          <label class="form__label form__label--text" for="addon-2">Питьевая вода</label>
+          <input class="form__input form__input--text" type="radio" id="addon-2" name="addon-2"><br>
+          <label class="form__label form__label--text" for="addon-3">Молоко</label>
+          <input class="form__input form__input--text" type="radio" id="addon-3" name="addon-3"><br>
+          <label class="form__label form__label--text" for="addon-4">Витамины</label>
+          <input class="form__input form__input--text" type="radio" id="addon-4" name="addon-4">
         </div>
         <input class="btn btn--green" type="submit" value="отправить заявку">
-        <p class="contacts__text-bottom">* - Обязательные поля</p>
+        <p class="form__text-bottom">* - Обязательные поля</p>
       </form>
     </section>
     <footer class="footer">
       <div class="contacts">
-        <b class="promo-text">Приглашаем к сотрудничеству дилеров!</b>
-        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <b class="contacts__promo-text contacts__promo-text--bold">Приглашаем к сотрудничеству дилеров!</b>
+        <p class="contacts__text contacts__text--normal">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <div class="contacts__map-wrapper">
         <img class="image nav-map" src="http://placehold.it/320x365" alt="Наш адрес на карте">
