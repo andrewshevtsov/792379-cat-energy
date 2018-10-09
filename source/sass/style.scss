@@ -1,0 +1,15 @@
+// файлы БЭМ-блоков импортируются здесь
+@import 'variables';
+@import 'mixins';
+@import 'normalize';
+@import 'adjustment';
+@import 'fonts';
+@import 'sections/page-header';
+@import 'sections/burger-toggle';
+@import 'sections/main-nav';
+@import 'sections/main-page';
+@import 'sections/hero';
+@import 'sections/programs';
+@import 'sections/about';
+@import 'sections/example';
+@import 'sections/footer';

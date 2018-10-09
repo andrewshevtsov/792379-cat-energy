@@ -1,0 +1,7 @@
+.burger-toggle {
+  @include btn-open;
+}
+
+.burger-toggle--close {
+  @include btn-close;
+}

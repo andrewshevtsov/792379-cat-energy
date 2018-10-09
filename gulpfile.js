@@ -6,14 +6,17 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var sourcemaps = require("gulp-sourcemaps");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
+    .pipe( sourcemaps.init() )
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe( sourcemaps.write( "./" ) )
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });

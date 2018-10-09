@@ -1,0 +1,56 @@
+.example {
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: $bg-gray;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 60px;
+  margin: -10px 0 0 0;
+  font-weight: normal;
+}
+
+.example__text {
+  font-family: "Arial";
+}
+
+.example__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.facts-list__item {
+  width: 125px;
+  border: 1px solid $grey-darken;
+  border-radius: 3px;
+}
+
+.facts-list__text--top {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.facts-list__text--bottom {
+  font-size: 12px;
+  line-height: 12px;
+  font-family: "Arial";
+}
+
+.example__text--bottom {
+  font-family: "OswaldRegular";
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__slider {
+  text-align: center;
+}
+
+

@@ -1,0 +1,37 @@
+.hero {
+  background-image: url('../../img/index-background-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 25px;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 20px;
+  color: $bg-white;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+}
+
+.hero__promo-text {
+  width: 200px;
+  color: $bg-white;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: normal;
+}
+
+.hero__image {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  @include btn;
+
+  &--green {
+    @include btn--green;
+  }
+}

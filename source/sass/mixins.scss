@@ -1,0 +1,88 @@
+// кнопка открытия nav
+@mixin btn-open {
+  position: absolute;
+  top: 25px;
+  right: 23px;
+  width: 25px;
+  height: 2px;
+  box-shadow: inset 0px 2px 0px 0px #000;
+  border: 0;
+  padding: 10px;
+  background-color: transparent;
+
+  &::before {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    display: inline-block;
+    vertical-align: baseline;
+    width: 25px;
+    height: 2px;
+    content: "";
+    background-color: #000;
+  }
+
+  &::after {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    display: inline-block;
+    vertical-align: baseline;
+    width: 25px;
+    height: 2px;
+    content: "";
+    background-color: #000;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// кнопка закрытия nav
+@mixin btn-close {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  border: 0;
+  padding: 10px;
+  background-color: transparent;
+
+  &::before {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    display: inline-block;
+    vertical-align: baseline;
+    width: 25px;
+    height: 2px;
+    content: "";
+    background-color: #000;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    display: inline-block;
+    vertical-align: baseline;
+    width: 25px;
+    height: 2px;
+    content: "";
+    background-color: #000;
+    transform: rotate(-45deg);
+  }
+}
+
+@mixin btn {
+  padding: $btn-paddings;
+  text-decoration: none;
+}
+
+@mixin btn--green {
+  color: $bg-white;
+  background-color: $green-lighten;
+  font-size: 14px;
+  line-height: 18px;
+}
