@@ -1,0 +1,32 @@
+.additional-products {
+  position: relative;
+  text-align: center;
+  padding: 0 20px 0 20px;
+}
+
+.additional-products__list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 38px;
+}
+
+.additional-products__item--first {
+  border-top: 1px solid $grey-darken;
+}
+
+.additional-products__item {
+  padding-bottom: 20px;
+  border-bottom: 1px solid $grey-darken;
+}
+
+.additional-products__text {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Arial";
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.btn--green-additional {
+  display: block;
+}

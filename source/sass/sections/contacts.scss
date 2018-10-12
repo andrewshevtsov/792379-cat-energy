@@ -1,0 +1,43 @@
+.contacts {
+  display: flex;
+  align-items: center;
+  width: 280px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contacts__map-wrapper {
+  position: relative;
+  min-height: 365px;
+  background-image: url("../../img/bg-map-mobile@1x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  font-size: 0;
+  line-height: 0;
+
+  &::before {
+    position: absolute;
+    top: 60px;
+    left: 80px;
+    content: url("../../img/map-pin.png");
+  }
+}
+
+.contacts__text--normal {
+  font-family: "Arial";
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.contacts--catalog {
+  margin: 0;
+  width: 280px;
+  padding: 20px;
+  background-color: $bg-gray;
+}

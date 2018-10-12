@@ -1,0 +1,42 @@
+.catalog {
+  text-align: center;
+}
+
+.catalog__list {
+  padding: 0 20px 0 20px;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__item {
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $border-bottom;
+}
+
+.catalog__row {
+  display: flex;
+
+}
+
+.catalog__text {
+  margin: 0;
+}
+
+.catalog__datalist {
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog__datalist--row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__row-right {
+  width: 150px;
+}

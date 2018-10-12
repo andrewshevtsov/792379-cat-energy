@@ -1,0 +1,25 @@
+.promo {
+  position: relative;
+}
+
+.promo__text {
+  width: 160px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -104px;
+  margin-bottom: 82px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Arial";
+  color: $bg-white;
+}
+
+.promo__gift {
+  position: absolute;
+  top: 65px;
+  left: 40%;
+  width: 55px;
+  height: 60px;
+}

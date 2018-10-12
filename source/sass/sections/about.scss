@@ -3,13 +3,6 @@
   box-sizing: border-box;
 }
 
-.title-second {
-  font-size: 36px;
-  line-height: 60px;
-  margin: -20px 0 0 0;
-  font-weight: normal;
-}
-
 .about__list {
   list-style-type: none;
   padding-top: 0;
@@ -23,11 +16,6 @@
 
   align-items: center;
   font-family: "Arial";
-}
-
-.image--advantage {
-  background-color: $green-lighten;
-  margin-right: 20px;
 }
 
 .about__text {

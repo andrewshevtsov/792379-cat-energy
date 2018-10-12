@@ -34,3 +34,92 @@ img {
 a {
   color: #000000;
 }
+
+.logo__image {
+  width: 192px;
+  height: 38px;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.title-first {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+}
+
+.title-first--catalog {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $border-bottom;
+}
+
+.title-second {
+  font-size: 36px;
+  line-height: 60px;
+  margin: -20px 0 0 0;
+  font-weight: normal;
+}
+
+.title-third--catalog {
+  width: 75px;
+}
+
+.title-third--additional {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+  text-align: left;
+
+  &::after {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    content: "";
+    width: 53px;
+    height: 3px;
+    background-color: $green-lighten;
+  }
+}
+
+.title-third--product {
+  text-align: left;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.image--slim {
+  position: relative;
+  left: 10px;
+}
+
+.image--advantage {
+  background-color: $green-lighten;
+  margin-right: 20px;
+}
+
+.promo-text--bold {
+  text-align: left;
+  font-weight: normal;
+}
+
+.btn {
+  @include btn;
+
+  &--green {
+    @include btn--green;
+  }
+
+  &--green-catalog {
+    @include btn--green;
+    display: block;
+  }
+
+  &--gray {
+    border: none;
+    background-color: $bg-gray;
+  }
+}

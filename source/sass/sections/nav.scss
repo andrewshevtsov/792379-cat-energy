@@ -1,0 +1,13 @@
+.nav-list__item {
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid $border-bottom;
+  text-align: center;
+}
+
+.nav-list__link {
+  text-decoration: none;
+  color: $oswald-m-color;
+  font-family: "OswaldMedium";
+  font-size: 20px;
+  line-height: 20px;
+}
