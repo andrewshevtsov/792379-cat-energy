@@ -56,15 +56,15 @@ a {
   border-bottom: 1px solid $border-bottom;
 }
 
-.title-second {
-  font-size: 36px;
-  line-height: 60px;
-  margin: -20px 0 0 0;
-  font-weight: normal;
-}
-
 .title-third--catalog {
   width: 75px;
+}
+
+.title-third--form {
+  width: 185px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
 }
 
 .title-third--additional {
@@ -115,11 +115,32 @@ a {
 
   &--green-catalog {
     @include btn--green;
-    display: block;
+  }
+
+  &--green-form {
+    border: none;
   }
 
   &--gray {
     border: none;
     background-color: $bg-gray;
+  }
+}
+
+.btn--hero-tablet {
+  margin-top: 305px;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__image {
+    display: none;
+  }
+
+  .logo__header {
+    width: 175px;
+    height: 58px;
+    background-image: url("../img/logo-tablet.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }

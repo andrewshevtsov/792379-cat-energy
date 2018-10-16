@@ -22,9 +22,14 @@
 
   &::before {
     position: absolute;
-    top: 60px;
-    left: 80px;
-    content: url("../../img/map-pin.png");
+    content: "";
+    top: 130px;
+    left: 122px;
+    width: 55px;
+    height: 53px;
+    background-image: url(../../img/map-pin.png);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 

@@ -24,8 +24,8 @@
         <li class="nav-list__item">
           <a class="nav-list__link" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="nav-list__item">
-          <a class="nav-list__link nav-list__item--active">Подбор программы</a>
+        <li class="nav-list__item nav-list__item--active">
+          <a class="nav-list__link">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -37,44 +37,73 @@
         Заполните анкету и мы подберем программу питания для Вашего кота
       </p>
       <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="POST">
-        <div class="form__row">
-          <label class="form__label form__label--text" for="cat-name">Имя:*</label>
-          <input class="form__input form__input--text" type="text" id="cat-name" name="cat-name" placeholder="Барсик"><br>
-          <label class="form__label form__label--text" for="cat-weight">Вес (кг):*</label>
-          <input class="form__input form__input--text" type="text" id="cat-weight" name="cat-weight"><br>
-          <label class="form__label form__label--text" for="cat-age">Возраст (лет):</label>
-          <input class="form__input form__input--text" type="text" id="cat-age" name="cat-age">
+        <ul class="form__list form__list--underline">
+          <li class="form__item">
+            <label class="form__label form__label--text" for="cat-name">Имя:*</label>
+            <input class="form__input form__input--text" type="text" id="cat-name" name="cat-name" placeholder="Барсик">
+          </li>
+          <li class="form__item">
+            <label class="form__label form__label--text" for="cat-weight">Вес (кг):*</label>
+            <input class="form__input form__input--text" type="text" id="cat-weight" name="cat-weight" placeholder="7">
+          </li>
+          <li class="form__item">
+            <label class="form__label form__label--text" for="cat-age">Возраст (лет):</label>
+            <input class="form__input form__input--text" type="text" id="cat-age" name="cat-age" placeholder="7">
+          </li>
+        </ul>
+        <ul class="form__list form__list--underline">
+          <li class="form-item">
+            <input class="form__input form__input--radio visually-hidden" type="radio" id="drying" name="drying" checked>
+            <label for="drying" class="form__label form__label--radio">Похудение</label>
+          </li>
+          <li class="form-item">
+            <input class="form__input form__input--radio visually-hidden" type="radio" id="gain" name="gain">
+            <label for="gain" class="form__label form__label--radio">Набор массы</label>
+          </li>
+          <li class="form-item">
+            <input class="form__input form__input--radio visually-hidden" type="radio" id="unknown" name="unknown">
+            <label for="unknown" class="form__label form__label--radio">Не знаю (нужен ваш совет)</label>
+          </li>
+        </ul>
+        <div class="form__title-wrap">
+          <h3 class="title-third title-third--form">Контактные данные (владельца кота)</h3>
         </div>
-        <div class="form__row">
-          <input class="form__input form__input--text" type="radio" id="drying" name="drying">
-          <label class="form__label form__label--text" for="drying">Похудение</label><br>
-          <input class="form__input form__input--text" type="radio" id="gain" name="gain">
-          <label class="form__label form__label--text" for="gain">Набор массы</label><br>
-          <input class="form__input form__input--text" type="radio" id="unknown" name="unknown">
-          <label class="form__label form__label--text" for="unknown">Не знаю (нужен вас совет)</label>
+        <ul class="form__list">
+          <li class="form__item">
+            <label class="form__label form__label--email" for="email">E-MAIL:*</label>
+            <input class="form__input form__input--email" type="text" id="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" required>
+          </li>
+          <li class="form__item">
+            <label class="form__label form__label--phone" for="phone">Телефон:*</label>
+            <input class="form__input form__input--phone" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+          </li>
+        </ul>
+        <div class="form__comment-wrapper">
+          <label class="form__label form__label--comment" for="comment">Комментарий</label>
+          <textarea class="form__input form__input--textarea" name="comment" id="comment" cols="30" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
-        <h3 class="title-third">Контактные данные<br>(владельца кота)</h3>
-        <div class="form__row">
-          <label class="form__label form__label--text" for="email">E-MAIL:*</label>
-          <input class="form__input form__input--text" type="text" id="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" required><br>
-          <label class="form__label form__label--text" for="phone">Телефон:*</label>
-          <input class="form__input form__input--text" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+        <div class="form__title-wrap form__title-wrap--additional">
+          <h3 class="title-third title-third--form">Дополнительно</h3>
         </div>
-        <div class="form__row">
-          <label class="form__label form__label--text" for="comment">Комментарий</label><br>
-          <textarea class="form__input form__input--text" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
-        </div>
-        <div class="form__row">
-          <label class="form__label form__label--text" for="addon-1">Сахарозаменитель</label>
-          <input class="form__input form__input--text" type="radio" id="addon-1" name="addon-1" checked><br>
-          <label class="form__label form__label--text" for="addon-2">Питьевая вода</label>
-          <input class="form__input form__input--text" type="radio" id="addon-2" name="addon-2"><br>
-          <label class="form__label form__label--text" for="addon-3">Молоко</label>
-          <input class="form__input form__input--text" type="radio" id="addon-3" name="addon-3"><br>
-          <label class="form__label form__label--text" for="addon-4">Витамины</label>
-          <input class="form__input form__input--text" type="radio" id="addon-4" name="addon-4">
-        </div>
-        <input class="btn btn--green" type="submit" value="отправить заявку">
+        <ul class="form__list">
+          <li class="form__item">
+            <input class="form__input form__input--checkbox visually-hidden" type="radio" id="addon-1" name="addon-1" checked>
+            <label class="form__label form__label--checkbox" for="addon-1">Сахарозаменитель</label>
+          </li>
+          <li class="form__item">
+            <input class="form__input form__input--checkbox visually-hidden" type="radio" id="addon-2" name="addon-2">
+            <label class="form__label form__label--checkbox" for="addon-2">Питьевая вода</label>
+          </li>
+          <li class="form__item">
+            <input class="form__input form__input--checkbox visually-hidden" type="radio" id="addon-3" name="addon-3">
+            <label class="form__label form__label--checkbox" for="addon-3">Молоко</label>
+          </li>
+          <li class="form__item">
+            <input class="form__input form__input--checkbox visually-hidden" type="radio" id="addon-4" name="addon-4">
+            <label class="form__label form__label--checkbox" for="addon-4">Витамины</label>
+          </li>
+        </ul>
+        <input class="btn btn--green btn--green-form" type="submit" value="отправить заявку">
         <p class="form__text form__text--bottom">* - Обязательные поля</p>
       </form>
     </section>

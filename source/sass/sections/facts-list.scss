@@ -1,16 +1,48 @@
 .facts-list__item {
+  position: relative;
   width: 125px;
   border: 1px solid $grey-darken;
   border-radius: 3px;
+  padding-bottom: 15px;
 }
 
 .facts-list__text--top {
   font-size: 24px;
   line-height: 24px;
+  margin: 10px 0 0 0;
 }
 
 .facts-list__text--bottom {
+  position: absolute;
+  left: 20px;
+  bottom: -28px;
+  width: 60px;
   font-size: 12px;
   line-height: 12px;
   font-family: "Arial";
+  background-color: $bg-gray;
+  padding: 0 12px 0 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .facts-list__item {
+    width: 162px;
+    padding: 8px 0 20px 0;
+  }
+
+  .facts-list__item:first-child {
+    margin-right: 42px;
+  }
+
+  .facts-list__text--top {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .facts-list__text--bottom {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $bg-white;
+    left: 35px;
+  }
 }

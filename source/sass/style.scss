@@ -3,6 +3,7 @@
 @import 'mixins';
 @import 'normalize';
 @import 'adjustment';
+@import 'sections/title-second';
 @import 'fonts';
 @import 'sections/page-header';
 @import 'sections/burger-toggle';
@@ -12,6 +13,7 @@
 @import 'sections/programs';
 @import 'sections/about';
 @import 'sections/example';
+@import 'sections/slider';
 @import 'sections/footer';
 @import 'sections/facts-list';
 @import 'sections/contacts';
@@ -23,3 +25,4 @@
 @import 'sections/additional-products';
 @import 'sections/promo';
 @import 'sections/feedback';
+@import 'sections/form';

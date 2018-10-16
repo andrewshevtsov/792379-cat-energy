@@ -13,11 +13,121 @@
 
 .about__list-item {
   display: flex;
-
   align-items: center;
   font-family: "Arial";
 }
 
 .about__text {
-  margin-left: auto;
+  position: relative;
+  margin-left: 72px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    top: -2px;
+    left: -72px;
+    background-color: $green-lighten;
+  }
+
+ &::after {
+    position: absolute;
+    content: "";
+    top: -2px;
+    left: -72px;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+  }
+}
+
+.about__text--leaf::after {
+    background-image: url("../../img/advantage-leaf@1x.png");
+}
+
+.about__text--powder::after {
+  background-image: url("../../img/advantage-powder@1x.png");
+}
+
+.about__text--dining::after {
+  background-image: url("../../img/advantage-dining@1x.png");
+}
+
+.about__text--clock::after {
+  background-image: url("../../img/advantage-clock@1x.png");
+}
+
+@media (min-width: $tablet-width) {
+  .about {
+    padding: 0 30px 30px 30px;
+    border-bottom: 1px solid $grey-darken;
+    margin-bottom: 20px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 70px;
+  }
+
+  .about__list-item {
+    position: relative;
+    width: 244px;
+    min-height: 230px;
+  }
+
+  .about__list-item:not(:nth-child(2n)) {
+    margin-right: 190px;
+  }
+
+  .about__list-item:nth-child(-n+2) {
+    margin-bottom: 90px;
+  }
+
+  .about__list-item::before {
+    position: absolute;
+    top: 74px;
+    right: 0;
+    font-family: "OswaldRegular", "Arial", sans-serif;
+    font-size: 281px;
+    color: $bg-gray;
+  }
+
+  .about__list-item--one::before {
+    content: "1";
+  }
+
+  .about__list-item--two::before {
+    content: "2";
+  }
+
+  .about__list-item--three::before {
+    content: "3";
+  }
+
+  .about__list-item--four::before {
+    content: "4";
+  }
+
+  .about__text {
+    margin-left: 0;
+    font-size: 16px;
+    line-height: 24px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      top: -100px;
+      left: 0;
+    }
+
+    &::after {
+      top: -90px;
+      left: 10px;
+    }
+  }
 }

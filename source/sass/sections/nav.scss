@@ -1,7 +1,8 @@
 .nav-list__item {
-  padding: 20px 0 20px 0;
+  padding: 20px 0 15px 0;
   border-bottom: 1px solid $border-bottom;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .nav-list__link {
@@ -10,4 +11,20 @@
   font-family: "OswaldMedium";
   font-size: 20px;
   line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .nav-list__item {
+    border-bottom: none;
+    margin: 0 0 0 30px;
+  }
+
+  .nav-list__link {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .nav-list__item--active {
+    border-bottom: 2px solid $green-darken;
+  }
 }

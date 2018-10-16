@@ -1,0 +1,12 @@
+.title-second {
+  font-size: 36px;
+  line-height: 60px;
+  margin: -20px 0 0 0;
+  font-weight: normal;
+}
+
+@media (min-width: $tablet-width) {
+  .title-second {
+    font-size: 60px;
+  }
+}

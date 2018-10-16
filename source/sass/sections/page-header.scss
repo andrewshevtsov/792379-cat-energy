@@ -8,3 +8,13 @@
   height: 1px;
   background-color: $border-bottom;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: auto;
+  }
+
+  .page-header__line {
+    display: none;
+  }
+}

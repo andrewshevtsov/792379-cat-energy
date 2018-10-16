@@ -52,3 +52,9 @@
     cursor: pointer;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .burger-toggle {
+    display: none;
+  }
+}
