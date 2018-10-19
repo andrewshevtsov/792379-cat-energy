@@ -1,0 +1,35 @@
+.socials__link {
+  position: relative;
+}
+
+.socials__link--vkontakte::before {
+    position: absolute;
+    top: 5px;
+    content: "";
+    width: 22px;
+    height: 12px;
+    background-image: url("../../img/icon-vk-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.socials__link--instagram::before {
+  position: absolute;
+  top: 3px;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url("../../img/icon-insta-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.socials__link--facebook::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 19px;
+  background-image: url("../../img/icon-fb-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

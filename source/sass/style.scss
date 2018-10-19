@@ -3,6 +3,7 @@
 @import 'mixins';
 @import 'normalize';
 @import 'adjustment';
+@import 'promo-text';
 @import 'sections/title-second';
 @import 'fonts';
 @import 'sections/page-header';
@@ -14,12 +15,14 @@
 @import 'sections/about';
 @import 'sections/example';
 @import 'sections/slider';
+@import 'sections/socials';
 @import 'sections/footer';
 @import 'sections/facts-list';
 @import 'sections/contacts';
 @import 'sections/copyright';
 @import 'sections/nav';
 @import 'sections/catalog-page';
+@import 'sections/image.scss';
 @import 'sections/catalog';
 @import 'sections/more-products';
 @import 'sections/additional-products';

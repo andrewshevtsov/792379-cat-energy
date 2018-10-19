@@ -27,6 +27,35 @@
   line-height: 14px;
 }
 
-.btn--green-additional {
-  display: block;
+@media (min-width: $tablet-width) {
+  .additional-products {
+    padding: 0 30px 0 30px;
+    margin-bottom: 40px;
+  }
+
+  .additional-products__list {
+    border: 1px solid $bg-gray;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .additional-products__item {
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .additional-products__text {
+    margin-left: auto;
+  }
+
+  .additional-products__text--left {
+    width: 225px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

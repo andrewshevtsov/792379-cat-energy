@@ -3,9 +3,21 @@
 }
 
 .copyright__text {
+  position: relative;
   font-family: "Arial";
   font-size: 16px;
   line-height: 16px;
+  width: 100%;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    top: -20px;
+    right: -10px;
+    background-image: url("../../img/htmlacademy.svg");
+  }
 }
 
 .copyright__link {
@@ -13,5 +25,23 @@
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
-  padding-top: 18px;
+  padding: 30px 0 15px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    border-top: none;
+  }
+
+  .copyright__text {
+    margin-right: 80px;
+  }
+
+  .copyright__text::after {
+    right: -80px;
+  }
+
+  .copyright__link {
+    padding: 0;
+  }
 }

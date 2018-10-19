@@ -40,6 +40,7 @@
   .example {
     padding: 30px 30px 30px 30px;
     background-color: $bg-white;
+    box-shadow: inset 0px -350px 0 0 $bg-gray;
   }
 
   .example__title {
@@ -57,7 +58,7 @@
 
   .example__wrap {
     display: flex;
-    align-items: baseline;
+    align-items: center;
   }
 
   .example__list {

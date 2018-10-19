@@ -46,3 +46,27 @@
   padding: 20px;
   background-color: $bg-gray;
 }
+
+@media (min-width: $tablet-width) {
+  .footer {
+    background-color: $bg-gray;
+  }
+
+  .contacts {
+    width: 625px;
+    padding-top: 65px;
+    margin-bottom: 65px;
+  }
+
+  .contacts__text--normal {
+    width: 155px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: auto;
+    text-align: right;
+  }
+
+  .contacts__map-wrapper::before {
+    left: 345px;
+  }
+}

@@ -14,11 +14,25 @@
   padding: 0;
   margin: 0;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   width: 140px;
   display: flex;
   list-style-type: none;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__background {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+  }
+
+  .footer__logo-wrapper {
+    border-bottom: none;
+    padding: 0;
+    margin-left: 10px;
+  }
 }

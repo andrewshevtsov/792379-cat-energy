@@ -37,7 +37,7 @@ a {
 
 .logo__image {
   width: 192px;
-  height: 38px;
+  height: auto;
   margin-left: 20px;
   margin-top: 15px;
   margin-bottom: 10px;
@@ -89,6 +89,7 @@ a {
   font-weight: normal;
   font-size: 16px;
   line-height: 16px;
+  text-transform: uppercase;
 }
 
 .image--slim {
@@ -101,11 +102,6 @@ a {
   margin-right: 20px;
 }
 
-.promo-text--bold {
-  text-align: left;
-  font-weight: normal;
-}
-
 .btn {
   @include btn;
 
@@ -115,6 +111,8 @@ a {
 
   &--green-catalog {
     @include btn--green;
+    padding: 10px 110px;
+    display: inline-block;
   }
 
   &--green-form {
@@ -124,6 +122,8 @@ a {
   &--gray {
     border: none;
     background-color: $bg-gray;
+    display: inline-block;
+    padding: 12px 100px;
   }
 }
 
@@ -131,16 +131,69 @@ a {
   margin-top: 305px;
 }
 
+.btn--green-additional {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .logo__image {
-    display: none;
+    display: block;
+    width: 180px;
+    height: auto;
+    margin: 0 auto;
   }
 
-  .logo__header {
-    width: 175px;
-    height: 58px;
-    background-image: url("../img/logo-tablet.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  .title-first--catalog {
+    text-align: left;
+    margin-left: 38px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    border-bottom: none;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .title-third--additional {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 30px;
+  }
+
+  .title-third--additional::after {
+    top: 20px;
+    width: 328px;
+  }
+
+  .title-third--additional::before {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    content: "";
+    width: 28px;
+    height: 3px;
+    background-color: $green-lighten;
+  }
+
+  .title-third--catalog {
+    font-size: 20px;
+    line-height: 20px;
+    width: 140px;
+    margin: 30px auto;
+  }
+
+  .title-third--product {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .btn--green-catalog {
+    padding: 15px 0 15px 0;
+    width: 249px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn--green-additional {
+    width: 648px;
   }
 }

@@ -23,3 +23,22 @@
   width: 55px;
   height: 60px;
 }
+
+@media (min-width: $tablet-width) {
+  .image__promo {
+    width: 708px;
+    height: auto;
+  }
+
+  .promo__gift {
+    left: 13%;
+  }
+
+  .promo__text {
+    margin: 0;
+    position: absolute;
+    top: 75px;
+    right: 125px;
+    text-align: left;
+  }
+}

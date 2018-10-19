@@ -1,0 +1,16 @@
+.promo-text--bold {
+  text-align: left;
+  font-weight: normal;
+}
+
+@media (min-width: $tablet-width) {
+  .promo-text--bold {
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+  }
+
+  .promo-text {
+    width: 155px;
+  }
+}
