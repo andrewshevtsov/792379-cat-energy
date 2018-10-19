@@ -52,26 +52,26 @@
   margin-bottom: 10px;
 }
 
-.form__input--radio+label::before {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: -50px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid $grey-darken;
-    border-radius: 50%;
+.form__input--radio + label::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -50px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $grey-darken;
+  border-radius: 50%;
 }
 
-.form__input--radio:checked+label::after {
-    content: "";
-    position: absolute;
-    top: 13px;
-    left: -41px;
-    width: 15px;
-    height: 15px;
-    background-color: $green-lighten;
-    border-radius: 50%;
+.form__input--radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: -41px;
+  width: 15px;
+  height: 15px;
+  background-color: $green-lighten;
+  border-radius: 50%;
 }
 
 .form__title-wrap {
@@ -89,7 +89,7 @@
 }
 
 .form__input--email {
-  background-image: url(../../img/icon-mail.svg);
+  background-image: url("../../img/icon-mail.svg");
   background-size: 17px 20px;
   background-repeat: no-repeat;
   background-position: 175px 8px;
@@ -97,7 +97,7 @@
 }
 
 .form__input--phone {
-  background-image: url(../../img/icon-phone.svg);
+  background-image: url("../../img/icon-phone.svg");
   background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: 158px 8px;
@@ -116,7 +116,7 @@
   font-size: 24px;
   line-height: 24px;
 
-    &::after {
+  &::after {
     position: absolute;
     top: 20px;
     right: -20px;
@@ -147,13 +147,13 @@
 }
 
 .form__input--checkbox + label::before {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid $grey-darken;
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $grey-darken;
 }
 
 .form__input--checkbox:checked + label::after {
@@ -168,7 +168,7 @@
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: normal;

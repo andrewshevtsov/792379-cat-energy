@@ -42,13 +42,12 @@
 }
 
 .more-products__text-bottom {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
 }
 
 @media (min-width: $tablet-width) {
-
   .more-products__button {
     right: 30px;
     margin-top: 30px;

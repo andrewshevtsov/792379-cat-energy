@@ -27,14 +27,14 @@
     left: 122px;
     width: 55px;
     height: 53px;
-    background-image: url(../../img/map-pin.png);
+    background-image: url("../../img/map-pin.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
 }
 
 .contacts__text--normal {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   text-align: left;

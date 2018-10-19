@@ -1,5 +1,5 @@
 .hero {
-  background-image: url('../../img/index-background-mobile@1x.jpg');
+  background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   text-align: center;
   padding-top: 30px;
@@ -70,13 +70,13 @@
     }
   }
 
-.btn--hero-tablet {
+  .btn--hero-tablet {
     position: absolute;
     top: -60px;
     left: 120px;
     display: block;
     width: 245px;
-    padding: 20px 0px;
+    padding: 20px 0;
     font-size: 20px;
     line-height: 20px;
     text-align: center;

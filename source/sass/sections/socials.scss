@@ -3,14 +3,14 @@
 }
 
 .socials__link--vkontakte::before {
-    position: absolute;
-    top: 5px;
-    content: "";
-    width: 22px;
-    height: 12px;
-    background-image: url("../../img/icon-vk-mobile.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  position: absolute;
+  top: 5px;
+  content: "";
+  width: 22px;
+  height: 12px;
+  background-image: url("../../img/icon-vk-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .socials__link--instagram::before {

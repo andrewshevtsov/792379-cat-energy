@@ -61,9 +61,15 @@
 }
 
 .programs__title--pro {
-
   &::before {
-    @extend .programs__title--slim::before;
+    position: absolute;
+    content: "";
+    top: -5px;
+    left: -80px;
+    width: 50px;
+    height: 50px;
+    background-color: #68b738;
+    border-radius: 50%;
   }
 
   &::after {
@@ -73,7 +79,7 @@
     left: -89px;
     width: 67px;
     height: 28px;
-    background-image: url(../../img/icon-cat-pro.svg);
+    background-image: url("../../img/icon-cat-pro.svg");
     background-repeat: no-repeat;
   }
 }
@@ -82,7 +88,7 @@
   margin: 23px 0 23px 0;
   padding-bottom: 23px;
   box-shadow: 0 1px 0 0 #444444;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
 }
 
 .programs__link {
@@ -110,7 +116,7 @@
 
   .programs__item {
     min-height: 372px;
-    padding:80px 50px ;
+    padding: 80px 50px;
   }
 
   .programs__title {
@@ -138,7 +144,8 @@
     }
   }
 
-  .programs__title--slim::before, .programs__title--pro::before {
+  .programs__title--slim::before,
+  .programs__title--pro::before {
     top: 15px;
     right: 10px;
     left: auto;
