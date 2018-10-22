@@ -131,3 +131,24 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .about {
+    border-bottom: none;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .about__list {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .about__list-item:nth-child(-n+2) {
+    margin-bottom: 0;
+  }
+
+  .about__list-item:not(:nth-child(2n)) {
+    margin-right: 0;
+  }
+}

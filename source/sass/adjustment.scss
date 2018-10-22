@@ -152,6 +152,18 @@ a {
     line-height: 60px;
   }
 
+  .title-first--form {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .title-third--form {
+    width: 570px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 30px;
+  }
+
   .title-third--additional {
     font-size: 36px;
     line-height: 36px;
@@ -185,6 +197,19 @@ a {
     line-height: 20px;
   }
 
+  .btn--hero-tablet {
+    position: absolute;
+    top: -60px;
+    left: 120px;
+    display: block;
+    width: 245px;
+    padding: 20px 0;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    z-index: 2;
+  }
+
   .btn--green-catalog {
     padding: 15px 0 15px 0;
     width: 249px;
@@ -194,5 +219,70 @@ a {
 
   .btn--green-additional {
     width: 648px;
+  }
+
+  .btn--green-form {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__image {
+    width: 202px;
+    height: auto;
+  }
+
+  .image--fat-cat {
+    max-width: initial;
+    width: 190%;
+  }
+
+  .image--slim-cat {
+    max-width: initial;
+    width: 190%;
+    position: relative;
+    left: -96%;
+  }
+
+  .title-first--catalog {
+    margin-left: 0;
+    margin-bottom: 120px;
+  }
+
+  .btn--green-catalog {
+    width: 170px;
+  }
+
+  .btn--green-additional {
+    width: 245px;
+    padding: 10px 0;
+  }
+
+  .btn--green-form {
+    margin-left: 0;
+  }
+
+  .title-third--additional {
+    margin-left: 70px;
+    margin-bottom: 80px;
+  }
+
+  .title-third--additional::before {
+    width: 70px;
+  }
+
+  .title-third--additional::after {
+    width: 957px;
+  }
+
+  .title-third--product {
+    width: 245px;
+    margin: 0;
+  }
+
+  .title-third--form {
+    margin-left: 0;
+    width: 570px;
   }
 }

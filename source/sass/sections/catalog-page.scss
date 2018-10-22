@@ -5,6 +5,12 @@
 
 @media (min-width: $tablet-width) {
   .catalog-page {
-    width: 768px;
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-page {
+    width: $desktop-width;
   }
 }

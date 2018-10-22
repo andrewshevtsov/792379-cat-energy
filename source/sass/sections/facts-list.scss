@@ -46,3 +46,9 @@
     left: 35px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .facts-list__text--bottom {
+    background-color: $bg-gray;
+  }
+}

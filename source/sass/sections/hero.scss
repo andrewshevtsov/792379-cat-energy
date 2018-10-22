@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   text-align: center;
@@ -23,18 +24,13 @@
   line-height: 14px;
   font-weight: normal;
   text-transform: uppercase;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50px;
-    left: -50px;
-    width: 280px;
-    height: 270px;
-    background-image: url("../img/index-can-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.hero__image-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 165px;
 }
 
 @media (min-width: $tablet-width) {
@@ -59,26 +55,56 @@
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
+    z-index: 2;
+  }
+
+  .hero__image-wrapper {
+    z-index: 1;
+    top: 220px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 112px;
+    box-sizing: border-box;
+    min-height: 630px;
 
     &::before {
-      width: 709px;
-      height: 609px;
-      background-image: url("../../img/index-can-tablet@1x.jpg");
+      position: absolute;
+      top: -90px;
+      right: -120px;
+      width: 720px;
+      min-height: 695px;
+      content: "";
+      background-image: url("../../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
       background-size: cover;
-      left: -95px;
+      background-position: center center;
     }
   }
 
+  .hero__text-wrapper {
+    margin-top: 60px;
+    padding-left: 90px;
+  }
+
+  .hero__image-wrapper {
+    position: relative;
+    top: 0;
+    margin-left: 5px;
+  }
+
+  .hero__title {
+    margin-bottom: 40px;
+  }
+
   .btn--hero-tablet {
-    position: absolute;
-    top: -60px;
-    left: 120px;
-    display: block;
-    width: 245px;
-    padding: 20px 0;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 40px;
   }
 }

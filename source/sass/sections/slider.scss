@@ -57,3 +57,17 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .slider__image-wrapper {
+    position: relative;
+    width: 290px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .slider__control {
+    position: absolute;
+    bottom: -55px;
+  }
+}

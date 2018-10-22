@@ -28,3 +28,21 @@
     border-bottom: 2px solid $green-darken;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .nav-list__link {
+    color: $bg-white;
+  }
+
+  .nav-list__link--inner {
+    color: $text-dark;
+  }
+
+  .nav-list__item--active {
+    border-bottom-color: $bg-white;
+  }
+
+  .nav-list__item--active-inner {
+    border-bottom-color: $green-lighten;
+  }
+}

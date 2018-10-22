@@ -42,3 +42,19 @@
     text-align: left;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .promo {
+    width: 245px;
+  }
+
+  .promo__gift {
+    left: 40%;
+  }
+
+  .promo__text {
+    text-align: center;
+    top: 190px;
+    right: 38px;
+  }
+}

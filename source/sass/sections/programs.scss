@@ -169,3 +169,60 @@
     height: 112px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .programs {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .programs__list {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  .programs__item {
+    width: 570px;
+    padding: 30px 50px 0 50px;
+  }
+
+  .programs__wrap {
+    margin-top: 45px;
+  }
+
+  .programs__item:nth-child(odd) {
+    margin-right: 80px;
+  }
+
+  .programs__title {
+    margin-left: 165px;
+    margin-bottom: 60px;
+  }
+
+  .programs__title--slim::before,
+  .programs__title--pro::before {
+    width: 100px;
+    height: 100px;
+    left: -165px;
+    top: -30px;
+  }
+
+  .programs__title--slim::after {
+    width: 70px;
+    height: 92px;
+    left: -145px;
+    top: -30px;
+  }
+
+  .programs__title--pro::after {
+    width: 134px;
+    height: 56px;
+    left: -185px;
+    top: -10px;
+  }
+
+  .programs__text {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}

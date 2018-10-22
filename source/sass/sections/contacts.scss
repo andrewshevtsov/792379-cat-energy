@@ -70,3 +70,29 @@
     left: 345px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .footer {
+    position: relative;
+  }
+
+  .contacts {
+    margin: 0;
+    background-color: $bg-white;
+    padding: 70px 77px;
+    width: 570px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 2;
+    top: 80px;
+    left: 110px;
+  }
+
+  .contacts__map-wrapper::before {
+    left: 680px;
+  }
+
+  .contacts__text--normal {
+    margin-left: 70px;
+  }
+}

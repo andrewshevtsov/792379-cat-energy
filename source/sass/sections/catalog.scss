@@ -97,3 +97,34 @@
     line-height: 18px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    padding: 0 110px;
+    margin-bottom: 80px;
+  }
+
+  .catalog__list {
+    padding: 0;
+  }
+
+  .catalog__item {
+    width: 245px;
+  }
+
+  .catalog__item:nth-child(2n) {
+    margin-left: 0;
+  }
+
+  .catalog__item:not(:nth-child(4n)) {
+    margin-right: 80px;
+  }
+
+  .catalog__item--no-mrgnbtm {
+    margin-bottom: 0;
+  }
+
+  .catalog__row-right {
+    width: 170px;
+  }
+}
