@@ -1,6 +1,7 @@
 .slider__control {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .slider__toggle {
@@ -8,10 +9,92 @@
   background-color: transparent;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
+}
+
+.slider__slides {
+  display: flex;
+  min-height: 240px;
+  align-items: center;
+}
+
+.slider__image-wrapper--fat {
+  width: 280px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.slider__image-wrapper--slim {
+  position: absolute;
+  width: 280px;
+  display: none;
+}
+
+.slider__range-view {
+  position: relative;
+  width: 84px;
+  height: 14px;
+  background-color: $bg-white;
+  border-radius: 7px;
+  border: 1px solid $grey-darken;
+  box-sizing: border-box;
+
+  &::before {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    content: "";
+    width: 35px;
+    height: 6px;
+    border-radius: 7px;
+    background-color: $green-lighten;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .slider__bgcolor {
+    width: 768px;
+    background: linear-gradient(to right, $bg-gray 50%, #eaeaea 50%);
+  }
+
+  .slider__slides {
+    position: relative;
+    top: -168px;
+    justify-content: center;
+    min-height: 465px;
+  }
+
+  .slider__image-wrapper--fat {
+    position: relative;
+    width: initial;
+    left: -160px;
+    z-index: 2;
+  }
+
+  .slider__image-wrapper--slim {
+    width: initial;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    right: 65px;
+    z-index: 1;
+  }
+
+  .image--fat-cat {
+    max-width: initial;
+    width: 203%;
+  }
+
+  .image--slim-cat {
+    position: relative;
+    max-width: initial;
+    width: 208%;
+    left: -324px;
+  }
+
   .slider__control {
+    position: relative;
+    top: -70px;
     display: flex;
     align-items: center;
   }
@@ -36,7 +119,7 @@
     &::before {
       position: absolute;
       top: -15px;
-      left: 207px;
+      left: 198px;
       content: "";
       width: 34px;
       height: 34px;
@@ -48,7 +131,7 @@
     &::after {
       position: absolute;
       top: -1px;
-      left: 221px;
+      left: 212px;
       content: "";
       width: 8px;
       height: 8px;
@@ -59,15 +142,33 @@
 }
 
 @media (min-width: $desktop-width) {
+  .slider {
+    right: -700px;
+    bottom: -3px;
+  }
+
+  .slider__bgcolor {
+    height: 465px;
+  }
+
   .slider__image-wrapper {
     position: relative;
     width: 290px;
     overflow-x: hidden;
     overflow-y: hidden;
+    right: 0;
   }
 
   .slider__control {
-    position: absolute;
+    position: relative;
     bottom: -55px;
+  }
+
+  .slider__image-wrapper--fat {
+    left: 0;
+  }
+
+  .image--slim-cat {
+    left: -295px;
   }
 }

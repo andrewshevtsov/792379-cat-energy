@@ -11,10 +11,11 @@
 }
 
 .catalog__item {
-  margin-top: 5px;
   margin-bottom: 0;
   padding-bottom: 20px;
-  border-bottom: 1px solid $border-bottom;
+  border-bottom: 1px solid #e6e6e6;
+  border-left: 1px solid #ededed;
+  border-right: 1px solid #ededed;
 }
 
 .catalog__row {

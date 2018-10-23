@@ -126,6 +126,12 @@ a {
   }
 }
 
+.btn--gray-catalog {
+  background-color: $bg-gray;
+  color: #444444;
+  padding: 10px 90px;
+}
+
 .btn--hero-tablet {
   margin-top: 305px;
 }
@@ -222,7 +228,7 @@ a {
   }
 
   .btn--green-form {
-    margin-left: 60px;
+    margin-left: 30px;
     margin-right: 60px;
   }
 }

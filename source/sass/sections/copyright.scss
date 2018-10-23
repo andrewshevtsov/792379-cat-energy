@@ -7,17 +7,7 @@
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
-  width: 100%;
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 60px;
-    height: 60px;
-    top: -20px;
-    right: -10px;
-    background-image: url("../../img/htmlacademy.svg");
-  }
+  width: 115px;
 }
 
 .copyright__link {
@@ -31,14 +21,6 @@
 @media (min-width: $tablet-width) {
   .copyright {
     border-top: none;
-  }
-
-  .copyright__text {
-    margin-right: 80px;
-  }
-
-  .copyright__text::after {
-    right: -80px;
   }
 
   .copyright__link {

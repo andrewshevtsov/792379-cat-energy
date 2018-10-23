@@ -24,6 +24,10 @@
   position: relative;
 }
 
+.form__input--border {
+  border: 1px solid #cdcdcd;
+}
+
 .form__label {
   font-size: 16px;
   margin-right: 10px;
@@ -34,6 +38,7 @@
 .form__input {
   flex-grow: 1;
   padding: 10px;
+  border: 1px solid $grey-darken;
 }
 
 .form__input--text {
@@ -179,7 +184,7 @@
   }
 
   .form__list--border {
-    border: 1px solid $bg-gray;
+    border: 1px solid #cdcdcd;
     padding-bottom: 20px;
     margin-right: 10px;
     margin-left: 30px;
@@ -258,19 +263,27 @@
   }
 
   .form__list--checkboxes {
-    width: 700px;
+    width: 645px;
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    margin-left: 25px;
   }
 
   .form__item--checkbox {
     width: 220px;
-    margin-right: 125px;
+    margin-right: 100px;
   }
 
   .form__text-wrap {
     display: flex;
     margin-bottom: 60px;
+  }
+
+  .form__input--checkbox:checked + label::after {
+    top: 9px;
   }
 }
 
@@ -287,7 +300,7 @@
 
   .form__list--border {
     margin: 0;
-    padding: 20px 20px 10px 20px;
+    padding: 14px 20px 10px 20px;
   }
 
   .form__list--width {

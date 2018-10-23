@@ -45,15 +45,15 @@
           <ul class="form__list form__list--underline form__list--desktop form__list--width">
             <li class="form__item">
               <label class="form__label form__label--text" for="cat-name">Имя:*</label>
-              <input class="form__input form__input--text" type="text" id="cat-name" name="cat-name" placeholder="Барсик">
+              <input class="form__input form__input--text form__input--border" type="text" id="cat-name" name="cat-name" placeholder="Барсик">
             </li>
             <li class="form__item">
               <label class="form__label form__label--text" for="cat-weight">Вес (кг):*</label>
-              <input class="form__input form__input--text" type="text" id="cat-weight" name="cat-weight" placeholder="7">
+              <input class="form__input form__input--text form__input--border" type="text" id="cat-weight" name="cat-weight" placeholder="7">
             </li>
             <li class="form__item">
               <label class="form__label form__label--text" for="cat-age">Возраст (лет):</label>
-              <input class="form__input form__input--text" type="text" id="cat-age" name="cat-age" placeholder="7">
+              <input class="form__input form__input--text form__input--border" type="text" id="cat-age" name="cat-age" placeholder="7">
             </li>
           </ul>
           <ul class="form__list form__list--underline form__list--border form__list--width">
@@ -116,9 +116,12 @@
       </form>
     </section>
     <footer class="footer">
-      <div class="contacts">
+      <div class="contacts contacts--form">
         <b class="promo-text promo-text--bold">Приглашаем к сотрудничеству дилеров!</b>
-        <p class="contacts__text contacts__text--normal">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="contacts__text contacts__text--normal">
+          <span class="contacts__text-top">ул. Большая Конюшенная, д. 19/8 </span>
+          <span class="contacts__text-bottom">Санкт-Петербург</span>
+        </p>
       </div>
       <div class="contacts__map-wrapper">
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac84e54f676c0ae0e91cf360f4c996bdb4d1cc49027b80ba8a810442744100e36&amp;source=constructor" width="100%" height="365" frameborder="0" class="interactive-map"></iframe>
