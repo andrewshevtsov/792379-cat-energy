@@ -3,11 +3,16 @@
 }
 
 .copyright__text {
-  position: relative;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
-  width: 115px;
+  margin-right: 23px;
+}
+
+.copyright__svg {
+  position: relative;
+  width: 27px;
+  height: 34px;
 }
 
 .copyright__link {
@@ -15,7 +20,7 @@
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
-  padding: 30px 0 15px 0;
+  padding: 25px 0 25px 0;
 }
 
 @media (min-width: $tablet-width) {

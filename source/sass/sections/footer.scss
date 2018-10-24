@@ -1,6 +1,6 @@
 .footer__background {
   background-color: $bg-gray;
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 0 20px;
 }
 
 .footer__logo-wrapper {
@@ -11,16 +11,16 @@
 }
 
 .footer__list {
+  display: flex;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   width: 140px;
-  display: flex;
   list-style-type: none;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-between;
 }
 
 @media (min-width: $tablet-width) {
@@ -28,11 +28,16 @@
     display: flex;
     align-items: center;
     padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .footer__logo-wrapper {
     border-bottom: none;
     padding: 0;
     margin-left: 10px;
+  }
+
+  .footer__list {
+    align-items: center;
   }
 }

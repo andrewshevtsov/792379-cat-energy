@@ -5,6 +5,10 @@
   text-transform: uppercase;
 }
 
+.nav-list__item--nomrgn-bottomm {
+  border-bottom: initial;
+}
+
 .nav-list__link {
   text-decoration: none;
   color: $oswald-m-color;

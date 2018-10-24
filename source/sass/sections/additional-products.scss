@@ -11,12 +11,12 @@
 }
 
 .additional-products__item--first {
-  border-top: 1px solid $bg-gray;
+  border-top: 1px solid $grey-darken;
 }
 
 .additional-products__item {
   padding-bottom: 20px;
-  border-bottom: 1px solid $bg-gray;
+  border-bottom: 1px solid $grey-darken;
 }
 
 .additional-products__text {
@@ -49,11 +49,11 @@
     align-items: center;
   }
 
-  .additional-products__item:first-child {
+  .additional-products__item--first {
     border-top: initial;
   }
 
-  .additional-products__item:last-child {
+  .additional-products__item--last {
     border-bottom: initial;
   }
 
@@ -84,6 +84,14 @@
   .additional-products__item {
     padding: 16px 0;
     flex-wrap: nowrap;
+  }
+
+  .additional-products__item--first {
+    border-top: 1px solid $grey-darken;
+  }
+
+  .additional-products__item--last {
+    border-bottom: 1px solid $grey-darken;
   }
 
   .additional-products__text--left {

@@ -1,11 +1,14 @@
 .catalog-page {
   width: 320px;
   margin: 0 auto;
+  border: 1px solid $border-grey;
+  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
   .catalog-page {
     width: $tablet-width;
+    border-top: none;
   }
 }
 

@@ -1,6 +1,8 @@
 .feedback {
   width: 320px;
   margin: 0 auto;
+  border: 1px solid $border-grey;
+  box-sizing: border-box;
 }
 
 .feedback__col {
@@ -12,11 +14,13 @@
   line-height: 18px;
   font-weight: normal;
   margin-bottom: 25px;
+  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
   .feedback {
     width: 768px;
+    border-top: none;
   }
 
   .feedback__col {

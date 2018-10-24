@@ -2,6 +2,9 @@
   position: relative;
   width: 320px;
   margin: 0 auto;
+  border: 1px solid $border-grey;
+  border-top: none;
+  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {

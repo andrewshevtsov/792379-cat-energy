@@ -14,8 +14,6 @@
   margin-bottom: 0;
   padding-bottom: 20px;
   border-bottom: 1px solid #e6e6e6;
-  border-left: 1px solid #ededed;
-  border-right: 1px solid #ededed;
 }
 
 .catalog__row {
@@ -44,7 +42,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog__list {
-    padding: 0 40px;
+    padding: 0 30px;
     flex-flow: row wrap;
   }
 
@@ -59,6 +57,10 @@
     box-sizing: border-box;
   }
 
+  .catalog__item--none-mbottom {
+    margin-bottom: 70px;
+  }
+
   .catalog__item--last {
     background-color: transparent;
     border: 1px solid $bg-gray;
@@ -69,7 +71,7 @@
   }
 
   .catalog__item:nth-child(2n) {
-    margin-left: 40px;
+    margin-left: auto;
   }
 
   .catalog__row-left {
@@ -107,6 +109,7 @@
 
   .catalog__list {
     padding: 0;
+    width: 1220px;
   }
 
   .catalog__item {

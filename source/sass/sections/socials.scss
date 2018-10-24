@@ -2,34 +2,35 @@
   position: relative;
 }
 
-.socials__link--vkontakte::before {
-  position: absolute;
-  top: 5px;
-  content: "";
+.socials__svg-vk {
   width: 22px;
   height: 12px;
-  background-image: url("../../img/icon-vk-mobile.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.socials__link--instagram::before {
-  position: absolute;
-  top: 3px;
-  content: "";
-  width: 16px;
-  height: 16px;
-  background-image: url("../../img/icon-insta-mobile.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+.socials__svg-instagram {
+  width: 17px;
+  height: 17px;
+  fill: #666666;
 }
 
-.socials__link--facebook::before {
-  position: absolute;
-  content: "";
+.socials__svg-fb {
   width: 10px;
   height: 19px;
-  background-image: url("../../img/icon-fb-mobile.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+@media (min-width: $tablet-width) {
+  .socials__svg-vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .socials__svg-instagram {
+    width: 23px;
+    height: 23px;
+  }
+
+  .socials__svg-fb {
+    width: 14px;
+    height: 28px;
+  }
 }
