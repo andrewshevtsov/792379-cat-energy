@@ -1,0 +1,127 @@
+.example {
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: $bg-gray;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 60px;
+  margin: -10px 0 0 0;
+  font-weight: normal;
+}
+
+.example__text {
+  font-family: "Arial", sans-serif;
+}
+
+.example__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.example__text--bottom {
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__slider {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    padding: 30px 30px 0 30px;
+    background-color: $bg-white;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 50px;
+  }
+
+  .example__text {
+    width: 676px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 50px;
+  }
+
+  .example__wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  .example__list {
+    justify-content: flex-start;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__text--bottom {
+    width: 185px;
+    margin-left: auto;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: right;
+  }
+
+  .example__slider {
+    position: relative;
+    left: -30px;
+    width: 768px;
+    min-height: 465px;
+    margin-top: 215px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    position: relative;
+    display: flex;
+    box-shadow: inset 0 -462px 0 0 $bg-gray;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .example__wrapper-desktop {
+    flex-direction: column;
+    margin-right: 180px;
+  }
+
+  .example__wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .example__title {
+    margin-bottom: 180px;
+    margin-top: 0;
+  }
+
+  .example__text {
+    width: 435px;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .example__text--sum {
+    margin-left: 65px;
+  }
+
+  .example__slider {
+    position: absolute;
+    right: 104px;
+    bottom: 135px;
+    display: flex;
+  }
+}

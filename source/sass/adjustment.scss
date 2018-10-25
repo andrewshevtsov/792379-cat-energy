@@ -1,0 +1,286 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-size: $fs-default;
+  line-height: $lh-default;
+  font-family: "OswaldRegular", "Arial", sans-serif;
+
+  background-color: $bg-white;
+
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(100%);
+}
+
+a {
+  color: #000000;
+}
+
+.logo__image {
+  width: 192px;
+  height: auto;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.title-first {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+}
+
+.title-first--catalog {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $border-bottom;
+}
+
+.title-third--catalog {
+  width: 75px;
+}
+
+.title-third--form {
+  width: 185px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.title-third--additional {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+  text-align: left;
+
+  &::after {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    content: "";
+    width: 53px;
+    height: 3px;
+    background-color: $green-lighten;
+  }
+}
+
+.title-third--product {
+  text-align: left;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.image--slim {
+  position: relative;
+  left: 10px;
+}
+
+.image--advantage {
+  background-color: $green-lighten;
+  margin-right: 20px;
+}
+
+.btn {
+  @include btn;
+
+  &--green {
+    @include btn--green;
+  }
+
+  &--green-catalog {
+    @include btn--green;
+    padding: 10px 110px;
+    display: inline-block;
+  }
+
+  &--green-form {
+    border: none;
+  }
+
+  &--gray {
+    border: none;
+    background-color: $bg-gray;
+    display: inline-block;
+    padding: 12px 100px;
+  }
+}
+
+.btn--gray-catalog {
+  background-color: $bg-gray;
+  color: #444444;
+  padding: 10px 90px;
+}
+
+.btn--hero-tablet {
+  margin-top: 305px;
+}
+
+.btn--green-additional {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__image {
+    display: block;
+    width: 180px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .title-first--catalog {
+    text-align: left;
+    margin-left: 38px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    border-bottom: none;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .title-first--form {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 0;
+    padding-top: 50px;
+  }
+
+  .title-third--form {
+    width: 570px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 30px;
+  }
+
+  .title-third--additional {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 30px;
+    margin-bottom: 75px;
+  }
+
+  .title-third--additional::after {
+    top: 20px;
+    width: 328px;
+  }
+
+  .title-third--additional::before {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    content: "";
+    width: 28px;
+    height: 3px;
+    background-color: $green-lighten;
+  }
+
+  .title-third--catalog {
+    font-size: 20px;
+    line-height: 20px;
+    width: 140px;
+    margin: 30px auto;
+  }
+
+  .title-third--product {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .btn--hero-tablet {
+    position: absolute;
+    top: -60px;
+    left: 120px;
+    display: block;
+    width: 245px;
+    padding: 20px 0;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    z-index: 2;
+  }
+
+  .btn--green-catalog {
+    padding: 15px 0 15px 0;
+    width: 249px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn--green-additional {
+    width: 648px;
+  }
+
+  .btn--green-form {
+    margin-left: 30px;
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__image {
+    width: 202px;
+    height: auto;
+  }
+
+  .title-first--catalog {
+    margin-left: 0;
+    margin-bottom: 120px;
+  }
+
+  .btn--green-catalog {
+    width: 170px;
+  }
+
+  .btn--green-additional {
+    width: 245px;
+    padding: 10px 0;
+  }
+
+  .btn--green-form {
+    margin-right: 80px;
+    width: 568px;
+  }
+
+  .title-third--additional {
+    margin-left: 70px;
+    margin-bottom: 80px;
+  }
+
+  .title-third--additional::before {
+    width: 70px;
+  }
+
+  .title-third--additional::after {
+    width: 957px;
+  }
+
+  .title-third--product {
+    width: 245px;
+    margin: 0;
+  }
+
+  .title-third--form {
+    margin-left: 0;
+    width: 570px;
+  }
+}

@@ -1,0 +1,60 @@
+// кнопка открытия nav
+.burger-toggle {
+  position: absolute;
+  right: 23px;
+  border: 0;
+  padding: 10px;
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    position: absolute;
+    left: 0;
+    background-color: #000000;
+    content: "";
+    display: inline-block;
+    vertical-align: baseline;
+    width: 25px;
+    height: 2px;
+  }
+}
+
+// кнопка закрытия nav
+.burger-toggle--close {
+  top: 23px;
+
+  &::before {
+    top: 9px;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    top: 9px;
+    transform: rotate(-45deg);
+  }
+}
+
+.burger-toggle--open {
+  top: 25px;
+  width: 25px;
+  height: 2px;
+  box-shadow: inset 0 2px 0 0 #000000;
+
+  &::before {
+    top: 9px;
+  }
+
+  &::after {
+    top: 18px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .burger-toggle {
+    display: none;
+  }
+}

@@ -1,0 +1,33 @@
+.page-header {
+  width: 320px;
+  margin: 0 auto;
+  border: 1px solid $border-grey;
+  border-bottom: none;
+  box-sizing: border-box;
+}
+
+.page-header__line {
+  width: 100%;
+  height: 1px;
+  background-color: $border-bottom;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: $tablet-width;
+    border: none;
+    border-top: 1px solid $border-grey;
+    border-left: 1px solid $border-grey;
+    border-right: 1px solid $border-grey;
+  }
+
+  .page-header__line {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: $desktop-width;
+  }
+}

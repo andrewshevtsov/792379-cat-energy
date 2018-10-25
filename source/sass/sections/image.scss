@@ -1,0 +1,17 @@
+@media (min-width: $tablet-width) {
+  .image__catalog {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .image__catalog--s {
+    width: 195px;
+    margin-top: -30px;
+  }
+
+  .image__catalog--l {
+    width: 195px;
+    margin-top: -50px;
+  }
+}

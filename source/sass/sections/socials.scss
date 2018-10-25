@@ -1,0 +1,36 @@
+.socials__link {
+  position: relative;
+}
+
+.socials__svg-vk {
+  width: 22px;
+  height: 12px;
+}
+
+.socials__svg-instagram {
+  width: 17px;
+  height: 17px;
+  fill: #666666;
+}
+
+.socials__svg-fb {
+  width: 10px;
+  height: 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .socials__svg-vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .socials__svg-instagram {
+    width: 23px;
+    height: 23px;
+  }
+
+  .socials__svg-fb {
+    width: 14px;
+    height: 28px;
+  }
+}

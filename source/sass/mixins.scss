@@ -1,0 +1,19 @@
+@mixin btn {
+  padding: $btn-paddings;
+  text-decoration: none;
+}
+
+@mixin btn--green {
+  color: $bg-white;
+  background-color: $green-lighten;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  display: block;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

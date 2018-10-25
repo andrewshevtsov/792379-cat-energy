@@ -1,0 +1,60 @@
+.promo {
+  position: relative;
+}
+
+.promo__text {
+  width: 160px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -104px;
+  margin-bottom: 82px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Arial", sans-serif;
+  color: $bg-white;
+}
+
+.promo__gift {
+  position: absolute;
+  top: 65px;
+  left: 40%;
+  width: 55px;
+  height: 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .image__promo {
+    width: 708px;
+    height: auto;
+  }
+
+  .promo__gift {
+    left: 13%;
+  }
+
+  .promo__text {
+    margin: 0;
+    position: absolute;
+    top: 75px;
+    right: 125px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    width: 245px;
+  }
+
+  .promo__gift {
+    left: 40%;
+  }
+
+  .promo__text {
+    text-align: center;
+    top: 190px;
+    right: 38px;
+  }
+}
