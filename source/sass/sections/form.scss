@@ -90,7 +90,7 @@
 }
 
 .form__input--email {
-  background-image: url("../../img/icon-mail.svg");
+  background-image: url("./../img/icon-mail.svg");
   background-size: 17px 20px;
   background-repeat: no-repeat;
   background-position: 175px 8px;
@@ -98,7 +98,7 @@
 }
 
 .form__input--phone {
-  background-image: url("../../img/icon-phone.svg");
+  background-image: url("./../img/icon-phone.svg");
   background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: 158px 8px;
@@ -162,7 +162,7 @@
   top: 12px;
   left: 11px;
   width: 21px;
-  content: url("../../img/icon-tick.svg");
+  content: url("./../img/icon-tick.svg");
 }
 
 .form__text--bottom {

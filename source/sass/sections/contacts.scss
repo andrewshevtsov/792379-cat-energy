@@ -22,7 +22,7 @@
 .contacts__map-wrapper {
   position: relative;
   min-height: 365px;
-  background-image: url("../../img/bg-map-mobile@1x.png");
+  background-image: url("./../img/bg-map-mobile@1x.png");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
@@ -36,7 +36,7 @@
     left: 122px;
     width: 55px;
     height: 53px;
-    background-image: url("../../img/map-pin.png");
+    background-image: url("./../img/map-pin.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
