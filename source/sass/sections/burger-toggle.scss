@@ -10,7 +10,7 @@
   &::after {
     position: absolute;
     left: 0;
-    background-color: #000000;
+    background-color: #111111;
     content: "";
     display: inline-block;
     vertical-align: baseline;
@@ -38,10 +38,10 @@
   top: 25px;
   width: 25px;
   height: 2px;
-  box-shadow: inset 0 2px 0 0 #000000;
+  border-top: 2px solid #111111;
 
   &::before {
-    top: 9px;
+    top: 8px;
   }
 
   &::after {
