@@ -5,6 +5,7 @@
   border: 1px solid $border-grey;
   border-top: none;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 @media (min-width: $tablet-width) {
@@ -16,5 +17,6 @@
 @media (min-width: $desktop-width) {
   .main-page {
     width: 1440px;
+    overflow-x: visible;
   }
 }
