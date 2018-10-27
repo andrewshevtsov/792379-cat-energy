@@ -8,7 +8,9 @@
 *.map
 *.sublime*
 node_modules/
+build/
 npm-debug.*
 source/css/*.css
 Thumbs.db
 package-lock.json
+style.css.map

@@ -186,8 +186,8 @@
   .form__list--border {
     border: 1px solid #cdcdcd;
     padding-bottom: 20px;
-    margin-right: 10px;
-    margin-left: 30px;
+    margin-right: 60px;
+    margin-left: 60px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -257,6 +257,8 @@
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: left;
+    margin-left: 60px;
+    margin-right: 60px;
   }
 
   .form__title-wrap--additional::after {
@@ -268,9 +270,8 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin: 0 auto;
+    margin: 0 60px 0 60px;
     margin-bottom: 40px;
-    margin-left: 25px;
   }
 
   .form__item--checkbox {
@@ -353,6 +354,8 @@
 
   .form__input--textarea {
     text-align: left;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .form__title-wrap--additional::after {
@@ -364,6 +367,8 @@
     width: initial;
     justify-content: space-between;
     margin-top: 70px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .form__item--checkbox {

@@ -41,3 +41,10 @@
     align-items: center;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .footer__background {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}

@@ -5,6 +5,11 @@
   <title>Функциональное питание для котов CAT ENERGY</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.min.js" async></script>
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 <body>
@@ -77,11 +82,11 @@
         <ul class="form__list form__list--contacts">
           <li class="form__item form__item--contacts">
             <label class="form__label form__label--email" for="email">E-MAIL:*</label>
-            <input class="form__input form__input--email" type="text" id="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" required>
+            <input class="form__input form__input--email" type="email" id="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" required>
           </li>
           <li class="form__item form__item--contacts">
             <label class="form__label form__label--phone" for="phone">Телефон:*</label>
-            <input class="form__input form__input--phone" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+            <input class="form__input form__input--phone" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
           </li>
         </ul>
         <div class="form__comment-wrapper">

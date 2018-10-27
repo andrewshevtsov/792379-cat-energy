@@ -5,6 +5,11 @@
   <title>Функциональное питание для котов CAT ENERGY</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.min.js" async></script>
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 <body>
@@ -42,11 +47,12 @@
           <div class="catalog__row">
             <div class="catalog__row-left">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png">
-                <img class="image image__catalog image__catalog--s" src="img/chicken-small-mobile@1x.jpg" alt="Cat Energy с курицей, 500 гр." width="140" height="144">
+                <source media="(min-width: 1440px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
+                <img class="image image__catalog image__catalog--s" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Cat Energy с курицей, 500 гр.">
               </picture>
             </div>
-            <div class="catalog__row-right">
+            <div class="catalog__row-right" id="program-pro">
               <h3 class="title-third title-third--catalog">CAT ENERGY PRO 500 Г</h3>
               <div class="catalog__content catalog__content--wrapper">
                 <div class="catalog__datalist">
@@ -72,8 +78,9 @@
           <div class="catalog__row">
             <div class="catalog__row-left">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png">
-                <img class="image image__catalog image__catalog--l" src="img/chicken-big-mobile@1x.jpg" alt="Cat Energy с курицей, 1000 гр." width="140" height="144">
+                <source media="(min-width: 1440px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
+                <img class="image image__catalog image__catalog--l" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Cat Energy с курицей, 1000 гр.">
               </picture>
             </div>
             <div class="catalog__row-right">
@@ -102,8 +109,9 @@
           <div class="catalog__row">
             <div class="catalog__row-left">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png">
-                <img class="image image__catalog image__catalog--s" src="img/fish-small-mobile@1x.jpg" alt="Cat Energy с рыбой, 500 гр." width="140" height="144">
+                <source media="(min-width: 1440px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
+                <img class="image image__catalog image__catalog--s" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" alt="Cat Energy с рыбой, 500 гр.">
               </picture>
             </div>
             <div class="catalog__row-right">
@@ -132,8 +140,9 @@
           <div class="catalog__row">
             <div class="catalog__row-left">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png">
-                <img class="image image__catalog image__catalog--l" src="img/fish-big-mobile@1x.jpg" alt="Cat Energy с курицей, 1000 гр." width="140" height="144">
+                <source media="(min-width: 1440px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
+                <img class="image image__catalog image__catalog--l" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Cat Energy с рыбой, 1000 гр.">
               </picture>
             </div>
             <div class="catalog__row-right">
@@ -146,7 +155,7 @@
                   </div>
                   <div class="catalog__datalist--item">
                     <p class="catalog__text catalog__text--left">Вкус</p>
-                    <p class="catalog__text catalog__text--right"></p>
+                    <p class="catalog__text catalog__text--right">Рыба</p>
                   </div>
                   <div class="catalog__datalist--item">
                     <p class="catalog__text catalog__text--left">Цена</p>
@@ -162,11 +171,12 @@
           <div class="catalog__row">
             <div class="catalog__row-left">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png">
-                <img class="image image__catalog image__catalog--s" src="img/buckwheat-small-mobile@1x.jpg" alt="Cat Energy с гречкой, 500 гр." width="140" height="144">
+                <source media="(min-width: 1440px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
+                <img class="image image__catalog image__catalog--s" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Cat Energy с гречкой, 500 гр.">
               </picture>
             </div>
-            <div class="catalog__row-right">
+            <div class="catalog__row-right" id="program-slim">
               <h3 class="title-third title-third--catalog">CAT ENERGY SLIM 500 Г</h3>
               <div class="catalog__content catalog__content--wrapper">
                 <div class="catalog__datalist">
@@ -192,8 +202,9 @@
           <div class="catalog__row">
             <div class="catalog__row-left">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png">
-                <img class="image image__catalog image__catalog--l" src="img/buckwheat-big-mobile@1x.jpg" alt="Cat Energy с гречкой, 1000 гр." width="140" height="144">
+                <source media="(min-width: 1440px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+                <img class="image image__catalog image__catalog--l" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Cat Energy с гречкой, 1000 гр.">
               </picture>
             </div>
             <div class="catalog__row-right">
@@ -222,8 +233,9 @@
           <div class="catalog__row">
             <div class="catalog__row-left">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png">
-                <img class="image image__catalog image__catalog--s" src="img/rice-small-mobile@1x.jpg" alt="Cat Energy с рисом, 500 гр." width="140" height="144">
+                <source media="(min-width: 1440px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
+                <img class="image image__catalog image__catalog--s" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" alt="Cat Energy с рисом, 500 гр.">
               </picture>
             </div>
             <div class="catalog__row-right">
@@ -301,9 +313,9 @@
         </ul>
         <div class="promo">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/gift-photo-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/gift-photo-tablet@1x.jpg">
-            <img class="image image__promo" src="img/gift-photo-mobile@1x.jpg" alt="Акция" width="280" height="289">
+            <source media="(min-width: 1440px)" srcset="img/gift-photo-desktop@1x.jpg 1x, img/gift-photo-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/gift-photo-tablet@1x.jpg 1x, img/gift-photo-tablet@2x.jpg 2x">
+            <img class="image image__promo" src="img/gift-photo-mobile@1x.jpg" srcset="img/gift-photo-mobile@2x.jpg 2x" alt="Акция">
           </picture>
           <div class="promo__gift">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 60" width="55" height="60" style="enable-background:new 0 0 55.5 60;" xml:space="preserve">

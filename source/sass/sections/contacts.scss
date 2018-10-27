@@ -73,6 +73,7 @@
 
   .contacts--tablet {
     border: none;
+    margin-bottom: 0;
   }
 
   .contacts__text--normal {
@@ -99,6 +100,8 @@
 
 @media (min-width: $desktop-width) {
   .footer {
+/*     width: 1440px;
+    margin: 0 auto; */
     position: relative;
   }
 

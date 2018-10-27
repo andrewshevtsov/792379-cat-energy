@@ -174,6 +174,8 @@
   .programs {
     padding-left: 110px;
     padding-right: 110px;
+/*     width: 1440px;
+    margin: 0 auto; */
   }
 
   .programs__list {
@@ -205,6 +207,10 @@
     height: 100px;
     left: -165px;
     top: -30px;
+  }
+
+  .programs__title--slim::before {
+    top: -25px;
   }
 
   .programs__title--slim::after {

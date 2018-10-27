@@ -132,8 +132,12 @@ a {
   padding: 10px 90px;
 }
 
-.btn--hero-tablet {
+.btn--hero-mobile {
+  padding: 10px 0 10px 0;
+  width: 280px;
   margin-top: 305px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn--green-additional {
@@ -217,6 +221,7 @@ a {
     line-height: 20px;
     text-align: center;
     z-index: 2;
+    margin-top: 305px;
   }
 
   .btn--green-catalog {
@@ -257,7 +262,8 @@ a {
   }
 
   .btn--green-form {
-    margin-right: 80px;
+    margin-left: 0;
+    margin-right: 100px;
     width: 568px;
   }
 
