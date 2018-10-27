@@ -62,7 +62,7 @@
 
 @media (min-width: $tablet-width) {
   .about {
-    padding: 0 30px 30px 30px;
+    padding: 0 0 30px;
     border-bottom: 1px solid $grey-darken;
     margin-bottom: 20px;
   }
@@ -92,7 +92,7 @@
     position: absolute;
     top: 74px;
     right: 0;
-    font-family: "OswaldRegular", "Arial", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 281px;
     color: $bg-gray;
   }

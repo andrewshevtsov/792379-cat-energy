@@ -1,11 +1,12 @@
 body {
+  width: 100%;
   min-width: 320px;
   margin: 0;
   padding: 0;
 
   font-size: $fs-default;
   line-height: $lh-default;
-  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
 
   background-color: $bg-white;
 
@@ -145,11 +146,6 @@ a {
 }
 
 @media (min-width: $tablet-width) {
-  body {
-    width: 768px;
-    margin: 0 auto;
-  }
-
   .logo__image {
     display: block;
     width: 180px;
@@ -247,11 +243,6 @@ a {
 }
 
 @media (min-width: $desktop-width) {
-  body {
-    width: 1440px;
-    margin: 0 auto;
-  }
-
   .logo__image {
     width: 202px;
     height: auto;

@@ -11,7 +11,6 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     display: flex;
-    padding: 25px 30px 0 30px;
   }
 
   .main-nav__list {
@@ -21,11 +20,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav {
-    padding-left: 110px;
-    padding-right: 110px;
-  }
-
   .main-nav__list {
     z-index: 2;
   }

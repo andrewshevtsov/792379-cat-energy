@@ -52,8 +52,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .slider__bgcolor {
-    width: 768px;
+  .slider__content-wrapper--bgcolor {
     background: linear-gradient(to right, $bg-gray 50%, #eaeaea 50%);
   }
 
@@ -76,6 +75,7 @@
     display: block;
     overflow-x: hidden;
     overflow-y: hidden;
+    top: 0;
     right: 86px;
     z-index: 1;
     width: 298px;
@@ -149,7 +149,7 @@
     bottom: -3px;
   }
 
-  .slider__bgcolor {
+  .slider__content-wrapper {
     height: 465px;
   }
 
@@ -168,11 +168,12 @@
 
   .slider__image-wrapper--fat {
     width: 365px;
-    left: 0;
+    left: -47px;
   }
 
   .slider__image-wrapper--slim {
     width: 271px;
+    left: -47px;
   }
 
   .image--fat-cat {

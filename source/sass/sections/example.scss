@@ -1,6 +1,5 @@
 .example {
   box-sizing: border-box;
-  padding: 20px;
   background-color: $bg-gray;
 }
 
@@ -25,7 +24,7 @@
 }
 
 .example__text--bottom {
-  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
@@ -33,13 +32,12 @@
 }
 
 .example__slider {
-  width: 280px;
+  width: 100%;
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .example {
-    padding: 30px 30px 0 30px;
     background-color: $bg-white;
   }
 
@@ -77,8 +75,6 @@
 
   .example__slider {
     position: relative;
-    left: -30px;
-    width: 768px;
     min-height: 465px;
     margin-top: 215px;
   }
