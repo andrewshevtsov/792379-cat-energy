@@ -1,5 +1,5 @@
-
 .form__list {
+  width: 100%;
   margin-bottom: 30px;
   position: relative;
   text-transform: uppercase;
@@ -38,7 +38,7 @@
 .form__input {
   flex-grow: 1;
   padding: 10px;
-  border: 1px solid $grey-darken;
+  border: 1px solid $input-grey;
 }
 
 .form__input--text {
@@ -209,7 +209,7 @@
   .form__title-wrap::before {
     position: absolute;
     top: 20px;
-    left: -30px;
+    left: 0;
     content: "";
     width: 30px;
     height: 3px;
@@ -223,17 +223,17 @@
   }
 
   .form__input--email {
-    background-position: 475px center;
+    background-position: 498px center;
   }
 
   .form__input--phone {
-    background-position: 455px center;
+    background-position: 477px center;
   }
 
   .form__label--comment {
     font-size: 36px;
     line-height: 36px;
-    margin-left: 30px;
+    margin-left: 58px;
     text-transform: none;
   }
 
@@ -246,7 +246,7 @@
   .form__label--comment::before {
     position: absolute;
     top: 30px;
-    left: -30px;
+    left: 0;
     content: "";
     width: 30px;
     height: 3px;
@@ -282,6 +282,7 @@
   .form__text-wrap {
     display: flex;
     margin-bottom: 60px;
+    margin-left: 35px;
   }
 
   .form__input--checkbox:checked + label::after {
@@ -373,5 +374,9 @@
 
   .form__item--checkbox {
     margin-right: initial;
+  }
+
+  .form__text-wrap {
+    margin-left: 0;
   }
 }

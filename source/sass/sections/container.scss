@@ -15,3 +15,21 @@
 .container--column {
   flex-direction: column;
 }
+
+.container--catalog {
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1300px;
+  }
+}
+
+.container--form {
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}

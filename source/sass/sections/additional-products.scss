@@ -37,6 +37,7 @@
     border: 1px solid $bg-gray;
     display: flex;
     flex-direction: column;
+    width: 708px;
   }
 
   .additional-products__item {
@@ -92,6 +93,7 @@
 
   .additional-products__item--last {
     border-bottom: 1px solid $grey-darken;
+    padding-bottom: 13px;
   }
 
   .additional-products__text--left {

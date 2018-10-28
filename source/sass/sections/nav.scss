@@ -17,6 +17,14 @@
   line-height: 20px;
 }
 
+.nav-list__link[href]:hover {
+  opacity: 0.6;
+}
+
+.nav-list__link[href]:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .nav-list__item {
     border-bottom: none;

@@ -12,16 +12,31 @@
 
 .slider__toggle {
   border: none;
+  padding: 0;
+  padding-bottom: 3px;
   background-color: transparent;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  border-bottom: 1px dotted #111111;
+}
+
+.slider__toggle:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #111111;
+}
+
+.slider__toggle:active {
+  border-bottom: none;
 }
 
 .slider__slides {
   display: flex;
+  width: 311px;
   min-height: 240px;
   align-items: center;
+  margin: 0 auto;
+  padding-bottom: 35px;
 }
 
 .slider__image-wrapper--fat {
@@ -43,6 +58,7 @@
   border-radius: 7px;
   border: 1px solid $grey-darken;
   box-sizing: border-box;
+  margin: 0 19px;
 
   &::before {
     position: absolute;
@@ -67,6 +83,7 @@
 
   .slider__slides {
     justify-content: center;
+    width: 768px;
     min-height: 465px;
     margin-top: -450px;
   }
@@ -77,12 +94,15 @@
 
   .slider__image-wrapper--fat {
     position: relative;
+    left: -20px;
     z-index: 2;
     width: 338px;
     height: auto;
   }
 
   .slider__image-wrapper--slim {
+    position: relative;
+    left: -20px;
     display: block;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -139,6 +159,7 @@
       border: 1px solid $grey-darken;
       border-radius: 50%;
       background-color: $bg-white;
+      box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
     }
 
     &::after {
@@ -152,10 +173,22 @@
       background-color: $green-lighten;
     }
   }
+
+  .slider__range-view:hover::before {
+    box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .slider__range-view:active::before {
+    border: 2px solid $green-lighten;
+  }
+
+  .slider__range-view:active::after {
+    top: 0;
+    left: 213px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-
   .slider__content-wrapper {
     height: 465px;
   }
@@ -165,18 +198,17 @@
     width: 290px;
     overflow-x: hidden;
     overflow-y: hidden;
-    right: 0;
-  }
-
-  .slider__control {
+    right: 47px;
   }
 
   .slider__image-wrapper--fat {
     width: 372px;
+    left: -46px;
   }
 
   .slider__image-wrapper--slim {
     width: 279px;
+    left: -46px;
 
     picture {
       margin-left: -133%;

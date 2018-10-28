@@ -43,6 +43,14 @@ a {
   margin-bottom: 10px;
 }
 
+.logo[href]:hover .image {
+  opacity: 0.8;
+}
+
+.logo[href]:active .image {
+  opacity: 0.6;
+}
+
 .title-first {
   font-size: 36px;
   line-height: 60px;
@@ -57,7 +65,8 @@ a {
 }
 
 .title-third--catalog {
-  width: 75px;
+  width: 80px;
+  text-align: left;
 }
 
 .title-third--form {
@@ -127,12 +136,6 @@ a {
   }
 }
 
-.btn--gray-catalog {
-  background-color: $bg-gray;
-  color: #444444;
-  padding: 10px 90px;
-}
-
 .btn--hero-mobile {
   padding: 10px 0 10px 0;
   width: 280px;
@@ -143,6 +146,33 @@ a {
 
 .btn--green-additional {
   display: block;
+}
+
+.btn--green:hover,
+.btn--green-catalog:hover {
+  background-color: #5eaa2f;
+}
+
+.btn--green:active,
+.btn--green-catalog:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.btn--gray-catalog {
+  background-color: $bg-gray;
+  color: #444444;
+  padding: 10px 90px;
+}
+
+.btn--hover-catalog:hover {
+  background-color: #ebebeb;
+  cursor: pointer;
+}
+
+.btn--hover-catalog:active {
+  opacity: 0.3;
+  color: #C6C6C6;
 }
 
 @media (min-width: $tablet-width) {
@@ -156,8 +186,8 @@ a {
   .title-first--catalog {
     text-align: left;
     margin-left: 38px;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 50px;
+    padding-bottom: 110px;
     border-bottom: none;
     font-size: 60px;
     line-height: 60px;
@@ -174,7 +204,7 @@ a {
     width: 570px;
     font-size: 36px;
     line-height: 36px;
-    margin-left: 30px;
+    margin-left: 58px;
   }
 
   .title-third--additional {
@@ -214,7 +244,7 @@ a {
   .btn--hero-tablet {
     position: absolute;
     top: -60px;
-    left: 120px;
+    left: 90px;
     display: block;
     width: 245px;
     padding: 20px 0;
@@ -243,7 +273,7 @@ a {
 }
 
 @media (min-width: $desktop-width) {
-  body {
+  .body-index {
     &::before {
       position: absolute;
       top: 0;
@@ -270,7 +300,8 @@ a {
 
   .title-first--catalog {
     margin-left: 0;
-    margin-bottom: 120px;
+    padding-top: 45px;
+    padding-bottom: 120px;
   }
 
   .btn--green-catalog {
@@ -298,7 +329,7 @@ a {
   }
 
   .title-third--additional::after {
-    width: 957px;
+    width: 64%;
   }
 
   .title-third--product {

@@ -5,6 +5,7 @@
   border-radius: 3px;
   padding-bottom: 15px;
   padding-top: 5px;
+  box-sizing: border-box;
 }
 
 .facts-list__text--top {
@@ -22,7 +23,7 @@
   line-height: 12px;
   font-family: "Arial", sans-serif;
   background-color: $bg-gray;
-  padding: 0 12px 0 12px;
+  padding: 0 12px;
 }
 
 @media (min-width: $tablet-width) {
@@ -45,6 +46,20 @@
     line-height: 14px;
     background-color: $bg-white;
     left: 35px;
+  }
+
+  .facts-list__text--left {
+    padding: 0 10px;
+    width: 97px;
+    bottom: -20px;
+    left: 20px;
+  }
+
+  .facts-list__text--right {
+    padding: 0 10px;
+    width: 128px;
+    bottom: -20px;
+    left: 6px;
   }
 }
 

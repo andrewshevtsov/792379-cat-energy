@@ -107,7 +107,20 @@
     width: 24px;
     height: 11px;
     background-image: url("./../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+}
+
+.programs__link:hover::after {
+  background-image: url("./../img/icon-right-arrow-verylong.svg");
+  width: 33px;
+  right: -45px;
+}
+
+.programs__link:active,
+.programs__link:active::after {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -172,11 +185,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .programs {
-    padding-left: 110px;
-    padding-right: 110px;
-  }
-
   .programs__list {
     display: flex;
     margin-bottom: 30px;
