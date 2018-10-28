@@ -39,6 +39,11 @@
   flex-grow: 1;
   padding: 10px;
   border: 1px solid $input-grey;
+  opacity: 0.5;
+}
+
+.form__input:hover {
+
 }
 
 .form__input--text {
