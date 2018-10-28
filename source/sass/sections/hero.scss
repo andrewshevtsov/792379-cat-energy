@@ -7,8 +7,9 @@
   min-height: 305px;
   width: 320px;
   margin: 0 auto;
+  box-sizing: border-box;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
     background-image: url("../../img/index-background-mobile@2x.jpg");
     background-size: 320px auto;
   }
@@ -45,7 +46,7 @@
     width: 768px;
     position: relative;
     background-image: none;
-    padding: 30px 30px 0 120px;
+    padding: 30px 0 0 90px;
     text-align: left;
     min-height: 788px;
   }
@@ -80,24 +81,6 @@
     box-sizing: border-box;
     min-height: 630px;
     width: 1220px;
-
-    &::before {
-      position: absolute;
-      top: -90px;
-      right: -108px;
-      width: 720px;
-      min-height: 695px;
-      content: "";
-      background-image: url("./../img/index-background-desktop@1x.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../../img/index-background-desktop@2x.jpg");
-        background-size: cover;
-      }
-    }
   }
 
   .hero__text-wrapper {

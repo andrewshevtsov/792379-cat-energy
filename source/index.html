@@ -104,8 +104,8 @@
       </div>
     </section>
     <section class="example">
-      <div class="container container--column">
-        <div class="example__wrapper-desktop">
+      <div class="example__container">
+        <div class="example__content-wrapper">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__text">
             Борис сбросил 5 кг за два месяца, просто заменив обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по прежнему спит по 16 часов в день.
@@ -132,62 +132,61 @@
             <p class="example__text example__text--bottom">
               Затраты на питание: <span class="example__text--sum">15 000 руб.</span>
             </p>
-        </div>
-        </div>
+          </div>
         </div>
         <div class="example__slider slider">
           <div class="slider__content-wrapper slider__content-wrapper--bgcolor">
-            <div class="container container--column">
-              <div class="slider__slides">
-                <div class="slider__image-wrapper slider__image-wrapper--fat">
-                    <picture>
-                      <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
-                      <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                      <img class="image image--fat-cat" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Толстый кот">
-                    </picture>
-                </div>
-                <div class="slider__image-wrapper slider__image-wrapper--slim">
+            <div class="slider__slides">
+              <div class="slider__image-wrapper slider__image-wrapper--fat">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset ="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                    <img class="image image--slim-cat" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Тонкий кот">
+                    <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                    <img class="image image--fat-cat" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Толстый кот">
                   </picture>
-                </div>
               </div>
-              <div class="slider__control">
-                <button class="slider__toggle">Было</button>
-                <input class="slider__input slider__input--range visually-hidden" type="range">
-                <div class="slider__range-view">
-                  <span class="visually-hidden">Слайдер: было-стало</span>
-                </div>
-                <button class="slider__toggle">Стало</button>
+              <div class="slider__image-wrapper slider__image-wrapper--slim">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset ="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                  <img class="image image--slim-cat" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Тонкий кот">
+                </picture>
               </div>
+            </div>
+            <div class="slider__control">
+              <button class="slider__toggle">Было</button>
+              <input class="slider__input slider__input--range visually-hidden" type="range">
+              <div class="slider__range-view">
+                <span class="visually-hidden">Слайдер: было-стало</span>
+              </div>
+              <button class="slider__toggle">Стало</button>
             </div>
           </div>
         </div>
-    </section>
-    <footer class="footer">
-      <div class="contacts contacts--tablet">
-        <div class="contacts__map-wrapper">
-          <div class="container contacts__container contacts__container--bg-white">
-            <b class="promo-text promo-text--bold">Приглашаем к сотрудничеству дилеров!</b>
-            <p class="contacts__text contacts__text--normal contacts__text--no-margin">
-              <span class="contacts__text-top">ул. Большая Конюшенная, д. 19/8 </span>
-              <span class="contacts__text-bottom">Санкт-Петербург</span>
-            </p>
-          </div>
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac84e54f676c0ae0e91cf360f4c996bdb4d1cc49027b80ba8a810442744100e36&amp;source=constructor" width="100%" height="365" frameborder="0" class="interactive-map"></iframe>
-        </div>
       </div>
-        <div class="container footer__container">
-          <div class="footer__logo-wrapper">
-            <img class="image logo logo__footer" src="img/logo-footer.svg" alt="Cat Energy" width="130" height="25">
-          </div>
-          <ul class="footer__list socials">
-            <li class="socials__item">
-              <a class="socials__link socials__link--vkontakte" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Мы Вконтакте</span>
-                <svg class="socials__svg-vk" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__contacts contacts contacts--bg-white">
+      <div class="container contacts__container">
+        <b class="promo-text promo-text--bold">Приглашаем к сотрудничеству дилеров!</b>
+        <p class="contacts__text contacts__text--normal contacts__text--no-margin contacts__text--margin-left">
+          <span>ул. Большая Конюшенная, д. 19/8</span>
+          <span>Санкт-Петербург</span>
+        </p>
+      </div>
+    </div>
+    <div class="footer__map-wrapper">
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac84e54f676c0ae0e91cf360f4c996bdb4d1cc49027b80ba8a810442744100e36&amp;source=constructor" width="100%" height="365" frameborder="0" class="footer__interactive-map"></iframe>
+    </div>
+    <div class="container footer__container">
+      <div class="footer__logo-wrapper">
+        <img class="image logo logo__footer" src="img/logo-footer.svg" alt="Cat Energy" width="130" height="25">
+      </div>
+      <ul class="footer__list socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы Вконтакте</span>
+            <svg class="socials__svg-vk" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
                   <g>
                     <path fill="#666666"
                       d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
@@ -206,25 +205,25 @@
                     c0,0,0-0.1-0.1-0.1c-0.1,0-0.2-0.1-0.2-0.1l-2.9,0c0,0,0,0-0.1,0c0.4,0.9,2.5,5,4.8,7.2c2,1.9,4.3,2,4.7,2l1.4,0c0,0,0.2,0,0.2-0.1
                     c0,0,0,0,0-0.1c0-0.2,0-2,1.2-2.3C13.5,8.3,13.6,8.3,13.7,8.3z"/>
                   </g>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link socials__link--instagram" href="https://www.instagram.com/htmlacademy">
-                <span class="visually-hidden">Мы в Instagram</span>
-                <svg class="socials__svg-instagram" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" xml:space="preserve">
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--instagram" href="https://www.instagram.com/htmlacademy">
+            <span class="visually-hidden">Мы в Instagram</span>
+            <svg class="socials__svg-instagram" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" xml:space="preserve">
                   <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1
                   L11.8,1 M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0L11.8,0z"/>
                   <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1c0,1.7-1.4,3.1-3.1,3.1c-1.7,0-3.1-1.4-3.1-3.1C4.9,6.3,6.3,4.9,8,4.9 M8,3.9
                   C5.7,3.9,3.9,5.7,3.9,8s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9L8,3.9z"/>
                   <circle class="st0" cx="12.3" cy="3.7" r="0.9"/>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link socials__link--facebook" href="https://www.facebook.com/htmlacademy">
-                <span class="visually-hidden">Мы в Facebook</span>
-                <svg class="socials__svg-fb" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--facebook" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">Мы в Facebook</span>
+            <svg class="socials__svg-fb" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
                   <g>
                     <path fill="#666666"
                       d="M7.1,19H2v-8.8H0V5.8h1.9c-0.1-2,0.2-3.4,1.1-4.4C3.8,0.5,5,0.1,6.5,0L10,0v4.2H7.2C7.1,4.4,7,5,7,5.8H10v4.4H7.1V19z
@@ -232,18 +231,17 @@
                     H1.1v2.3h2V18z"/>
                   </g>
                 </svg>
-              </a>
-            </li>
-          </ul>
-          <div class="copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru">
-              <span class="copyright__text">HTML Academy</span>
-              <svg xmlns="http://www.w3.org/2000/svg" class="copyright__svg" viewBox="10 10 40 40" width="90" height="60"><path fill="#666666" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
-            </a>
-          </div>
+          </a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru">
+          <span class="copyright__text">HTML Academy</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="copyright__svg" viewBox="10 10 40 40" width="90" height="60"><path fill="#666666" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+        </a>
       </div>
     </div>
+    </div>
   </footer>
-  </main>
 </body>
 </html>
