@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 34px;
 }
 
 .slider__toggle {
@@ -21,6 +22,18 @@
   border-bottom: 1px dotted #111111;
 }
 
+.slider__toggle--left {
+  position: relative;
+  top: 2px;
+  left: -11px;
+}
+
+.slider__toggle--right {
+  position: relative;
+  top: 2px;
+  left: 17px;
+}
+
 .slider__toggle:hover {
   cursor: pointer;
   border-bottom: 1px solid #111111;
@@ -32,21 +45,19 @@
 
 .slider__slides {
   display: flex;
-  width: 311px;
   min-height: 240px;
   align-items: center;
   margin: 0 auto;
-  padding-bottom: 35px;
+  padding-bottom: 27px;
 }
 
 .slider__image-wrapper--fat {
-  width: 280px;
+  margin: 0 auto;
   overflow-x: hidden;
   overflow-y: hidden;
 }
 
 .slider__image-wrapper--slim {
-  width: 280px;
   display: none;
 }
 
@@ -58,7 +69,7 @@
   border-radius: 7px;
   border: 1px solid $grey-darken;
   box-sizing: border-box;
-  margin: 0 19px;
+  margin-left: 7px;
 
   &::before {
     position: absolute;
@@ -74,7 +85,7 @@
 
 @media (min-width: $tablet-width) {
   .slider__content-wrapper {
-    padding: 300px 30px 50px;
+    padding: 300px 30px 37px;
   }
 
   .slider__content-wrapper--bgcolor {
@@ -83,9 +94,10 @@
 
   .slider__slides {
     justify-content: center;
-    width: 768px;
     min-height: 465px;
     margin-top: -450px;
+    padding-right: 40px;
+    padding-bottom: 5px;
   }
 
   .slider__image-wrapper {
@@ -94,15 +106,17 @@
 
   .slider__image-wrapper--fat {
     position: relative;
-    left: -20px;
+    top: -9px;
     z-index: 2;
     width: 338px;
     height: auto;
+    margin: 0;
   }
 
   .slider__image-wrapper--slim {
     position: relative;
-    left: -20px;
+    top: -7px;
+    left: -7px;
     display: block;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -117,13 +131,13 @@
 
   .image--fat-cat {
     max-width: none;
-    width: 203%;
+    width: 205%;
   }
 
   .image--slim-cat {
     position: relative;
     max-width: initial;
-    width: 225%;
+    width: 230%;
   }
 
   .slider__control {
@@ -140,14 +154,21 @@
     text-transform: uppercase;
   }
 
+  .slider__toggle--left {
+    left: -23px;
+  }
+
+  .slider__toggle--right {
+    left: 22px;
+  }
+
   .slider__range-view {
     position: relative;
     width: 428px;
     height: 6px;
     background-color: $grey-darken;
     border-radius: 3px;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin: 0;
 
     &::before {
       position: absolute;
@@ -191,6 +212,15 @@
 @media (min-width: $desktop-width) {
   .slider__content-wrapper {
     height: 465px;
+    padding-top: 275px;
+  }
+
+  .slider__slides {
+    position: relative;
+    top: -20px;
+    left: 24px;
+    padding-right: 36px;
+    padding-bottom: 2px;
   }
 
   .slider__image-wrapper {
@@ -202,13 +232,15 @@
   }
 
   .slider__image-wrapper--fat {
-    width: 372px;
-    left: -46px;
+    top: 2px;
+    left: -45px;
+    width: 365px;
   }
 
   .slider__image-wrapper--slim {
-    width: 279px;
-    left: -46px;
+    top: 3px;
+    left: -49px;
+    width: 271px;
 
     picture {
       margin-left: -133%;
@@ -223,5 +255,11 @@
   .image--slim-cat {
     width: 255%;
     position: relative;
+  }
+
+  .slider__control {
+    padding: 0;
+    margin-top: 14px;
+    margin-left: 16px;
   }
 }

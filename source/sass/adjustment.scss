@@ -58,15 +58,21 @@ a {
 }
 
 .title-first--catalog {
-  margin: 0;
-  padding-top: 15px;
-  padding-bottom: 20px;
+  margin: 0 0 0 -23px;
+  padding-top: 14px;
+  padding-bottom: 28px;
   border-bottom: 1px solid $border-bottom;
+}
+
+.title-first--form {
+  margin-top: 14px;
+  margin-bottom: 11px;
 }
 
 .title-third--catalog {
   width: 80px;
   text-align: left;
+  margin-top: 22px;
 }
 
 .title-third--form {
@@ -74,6 +80,11 @@ a {
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
+  margin: 43px 0 0 0;
+}
+
+.title-third--form-additional {
+  margin-top: 28px;
 }
 
 .title-third--additional {
@@ -81,6 +92,8 @@ a {
   line-height: 24px;
   font-weight: normal;
   text-align: left;
+  margin-top: 26px;
+  margin-bottom: 21px;
 
   &::after {
     position: absolute;
@@ -99,6 +112,8 @@ a {
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  margin: 13px 0 0 0;
+
 }
 
 .image--slim {
@@ -139,9 +154,10 @@ a {
 .btn--hero-mobile {
   padding: 10px 0 10px 0;
   width: 280px;
-  margin-top: 305px;
+  margin-top: 299px;
   margin-left: auto;
   margin-right: auto;
+  font-size: 14px;
 }
 
 .btn--green-additional {
@@ -162,7 +178,11 @@ a {
 .btn--gray-catalog {
   background-color: $bg-gray;
   color: #444444;
-  padding: 10px 90px;
+  padding: 10px 15px;
+  width: 249px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .btn--hover-catalog:hover {
@@ -185,9 +205,9 @@ a {
 
   .title-first--catalog {
     text-align: left;
-    margin-left: 38px;
-    padding-top: 50px;
-    padding-bottom: 110px;
+    padding-top: 58px;
+    padding-left: 53px;
+    padding-bottom: 163px;
     border-bottom: none;
     font-size: 60px;
     line-height: 60px;
@@ -197,21 +217,21 @@ a {
     font-size: 60px;
     line-height: 60px;
     margin-top: 0;
-    padding-top: 50px;
+    padding-top: 58px;
   }
 
   .title-third--form {
     width: 570px;
     font-size: 36px;
     line-height: 36px;
-    margin-left: 58px;
+    margin-left: 39px;
+    margin-top: 11px;
   }
 
   .title-third--additional {
     font-size: 36px;
     line-height: 36px;
-    margin-left: 30px;
-    margin-bottom: 75px;
+    margin: 0 0 65px 37px;
   }
 
   .title-third--additional::after {
@@ -233,21 +253,23 @@ a {
     font-size: 20px;
     line-height: 20px;
     width: 140px;
-    margin: 30px auto;
+    margin: 14px auto 21px auto;
+    text-align: center;
   }
 
   .title-third--product {
     font-size: 20px;
     line-height: 20px;
+    margin: -20px 0 0 2px;
   }
 
   .btn--hero-tablet {
     position: absolute;
-    top: -60px;
-    left: 90px;
+    top: -18px;
+    left: 120px;
     display: block;
     width: 245px;
-    padding: 20px 0;
+    padding: 16px 0;
     font-size: 20px;
     line-height: 20px;
     text-align: center;
@@ -256,7 +278,7 @@ a {
   }
 
   .btn--green-catalog {
-    padding: 15px 0 15px 0;
+    padding: 10px 0;
     width: 249px;
     margin-left: auto;
     margin-right: auto;
@@ -264,11 +286,22 @@ a {
 
   .btn--green-additional {
     width: 648px;
+    margin-top: 8px;
   }
 
   .btn--green-form {
-    margin-left: 30px;
     margin-right: 60px;
+    margin-left: 6px;
+    margin-top: 2px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 16px 68px 16px 63px;
+    width: 283px;
+    max-height: 52px;
+  }
+
+  .btn--gray-catalog {
+    padding: 10px 0;
   }
 }
 
@@ -300,15 +333,21 @@ a {
 
   .title-first--catalog {
     margin-left: 0;
-    padding-top: 45px;
-    padding-bottom: 120px;
+    padding-top: 74px;
+    padding-bottom: 164px;
+    padding-left: 0;
   }
 
   .btn--green-catalog {
     width: 170px;
   }
 
+  .btn--gray-catalog {
+    width: 169px;
+  }
+
   .btn--green-additional {
+    margin-top: 0;
     width: 245px;
     padding: 10px 0;
   }
@@ -320,16 +359,20 @@ a {
   }
 
   .title-third--additional {
-    margin-left: 70px;
+    margin-left: 0;
     margin-bottom: 80px;
   }
 
   .title-third--additional::before {
-    width: 70px;
+    top: 22px;
+    left: -138%;
+    width: 135%;
   }
 
   .title-third--additional::after {
-    width: 64%;
+    width: 150%;
+    top: 22px;
+    right: -81%;
   }
 
   .title-third--product {

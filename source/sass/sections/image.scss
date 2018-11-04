@@ -3,15 +3,20 @@
     display: block;
     height: auto;
     margin: 0 auto;
+    margin-bottom: 25px;
   }
 
   .image__catalog--s {
-    width: 195px;
-    margin-top: -30px;
+    width: 161px;
+    height: 172px;
+    object-fit: cover;
+    margin-top: -45px;
   }
 
   .image__catalog--l {
     width: 195px;
-    margin-top: -50px;
+    height: 208px;
+    object-fit: cover;
+    margin-top: -81px;
   }
 }

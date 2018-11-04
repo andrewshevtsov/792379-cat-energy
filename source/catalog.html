@@ -27,13 +27,13 @@
       </button>
       <div class="page-header__line page-header__line--bottom"></div>
       <ul class="main-nav__list nav-list">
-        <li class="nav-list__item">
+        <li class="nav-list__item nav-list__item--main">
           <a class="nav-list__link nav-list__link--inner" href="index.html">Главная</a>
         </li>
-        <li class="nav-list__item nav-list__item--active nav-list__item--active-inner">
+        <li class="nav-list__item nav-list__item--catalog nav-list__item--active nav-list__item--active-inner">
           <a class="nav-list__link nav-list__link--inner">Каталог продукции</a>
         </li>
-        <li class="nav-list__item">
+        <li class="nav-list__item nav-list__item--nomrgn-bottomm">
           <a class="nav-list__link nav-list__link--inner" href="form.html">Подбор программы</a>
         </li>
       </ul>
@@ -44,7 +44,7 @@
       <div class="container container--column container--catalog">
         <h1 class="title-first title-first--catalog">Каталог продукции</h1>
         <ul class="catalog__list">
-          <li class="catalog__item">
+          <li class="catalog__item catalog__item--smallbox">
             <div class="catalog__row">
               <div class="catalog__row-left">
                 <picture>
@@ -75,7 +75,7 @@
             </div>
             <a class="btn btn--green-catalog" href="#">Заказать</a>
           </li>
-          <li class="catalog__item">
+          <li class="catalog__item catalog__item--bigbox">
             <div class="catalog__row">
               <div class="catalog__row-left">
                 <picture>
@@ -106,7 +106,7 @@
             </div>
             <a class="btn btn--green-catalog" href="#">Заказать</a>
           </li>
-          <li class="catalog__item">
+          <li class="catalog__item catalog__item--smallbox">
             <div class="catalog__row">
               <div class="catalog__row-left">
                 <picture>
@@ -137,7 +137,7 @@
             </div>
             <a class="btn btn--green-catalog" href="#">Заказать</a>
           </li>
-          <li class="catalog__item">
+          <li class="catalog__item catalog__item--bigbox">
             <div class="catalog__row">
               <div class="catalog__row-left">
                 <picture>
@@ -168,7 +168,7 @@
             </div>
             <a class="btn btn--green-catalog" href="#">Заказать</a>
           </li>
-          <li class="catalog__item catalog__item--no-mrgnbtm">
+          <li class="catalog__item catalog__item--smallbox catalog__item--no-mrgnbtm">
             <div class="catalog__row">
               <div class="catalog__row-left">
                 <picture>
@@ -199,7 +199,7 @@
             </div>
             <a class="btn btn--green-catalog" href="#">Заказать</a>
           </li>
-          <li class="catalog__item catalog__item--no-mrgnbtm">
+          <li class="catalog__item catalog__item--bigbox catalog__item--no-mrgnbtm">
             <div class="catalog__row">
               <div class="catalog__row-left">
                 <picture>
@@ -230,7 +230,7 @@
             </div>
             <a class="btn btn--green-catalog" href="#">Заказать</a>
           </li>
-          <li class="catalog__item catalog__item--no-mrgnbtm catalog__item--none-mbottom">
+          <li class="catalog__item catalog__item--smallbox catalog__item--no-mrgnbtm catalog__item--none-mbottom">
             <div class="catalog__row">
               <div class="catalog__row-left">
                 <picture>
@@ -285,31 +285,31 @@
               <h3 class="title-third title-third--product">Сахарозаменитель</h3>
               <p class="additional-products__text">
                 <span class="additional-products__text--left">1 упаковка (100 г)</span>
-                <span class="additional-products__text--right">100 р</span>
+                <span class="additional-products__text--right">200 Р.</span>
               </p>
               <a class="btn btn--green btn--green-additional" href="#">Заказать</a>
             </li>
             <li class="additional-products__item">
               <h3 class="title-third title-third--product">Питьевая вода</h3>
               <p class="additional-products__text">
-                <span class="additional-products__text--left">5 литров</span>
-                <span class="additional-products__text--right">50 р</span>
+                <span class="additional-products__text--left additional-products__text--water">5 литров</span>
+                <span class="additional-products__text--right">50 Р.</span>
               </p>
               <a class="btn btn--green btn--green-additional" href="#">Заказать</a>
             </li>
             <li class="additional-products__item">
               <h3 class="title-third title-third--product">Молоко</h3>
               <p class="additional-products__text">
-                <span class="additional-products__text--left">1 литр</span>
-                <span class="additional-products__text--right">100 р</span>
+                <span class="additional-products__text--left additional-products__text--milk">1 литр</span>
+                <span class="additional-products__text--right">100 Р.</span>
               </p>
               <a class="btn btn--green btn--green-additional" href="#">Заказать</a>
             </li>
             <li class="additional-products__item additional-products__item--last">
               <h3 class="title-third title-third--product">Витамины</h3>
               <p class="additional-products__text">
-                <span class="additional-products__text--left">1 упаковка (30 г)</span>
-                <span class="additional-products__text--right">300 р</span>
+                <span class="additional-products__text--left additional-products__text--vitamins">1 упаковка (30 г)</span>
+                <span class="additional-products__text--right">300 Р.</span>
               </p>
               <a class="btn btn--green btn--green-additional" href="#">Заказать</a>
             </li>
@@ -334,8 +334,8 @@
               c0.4,0,0.7,0.3,0.7,0.7V24.7z"/>
               </svg>
             </div>
-            <p class="promo__text">
-              Закажите всё и получите чехол для кота в подарок!
+            <p class="promo__text promo__text--top">
+              Закажите всё<br> и получите чехол для кота в подарок!
             </p>
           </div>
         </div>
@@ -345,10 +345,10 @@
   <footer class="footer">
   <div class="footer__contacts contacts">
     <div class="container contacts__container">
-      <b class="promo-text promo-text--bold">Приглашаем к сотрудничеству дилеров!</b>
+      <b class="promo-text promo-text--bold">Приглашаем<br> к сотрудничеству дилеров!</b>
       <p class="contacts__text contacts__text--normal contacts__text--no-margin contacts__text--margin-left">
-        <span>ул. Большая Конюшенная, д. 19/8</span>
-        <span>Санкт-Петербург</span>
+        <span class="contacts__address-top">ул. Большая Конюшенная, д. 19/8</span>
+        <span class="contacts__address-bottom">Санкт-Петербург</span>
       </p>
     </div>
   </div>

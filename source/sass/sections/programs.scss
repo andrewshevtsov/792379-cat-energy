@@ -8,6 +8,7 @@
   padding: 0;
   list-style-type: none;
   width: 100%;
+  z-index: 1;
 }
 
 .programs__item {
@@ -35,14 +36,14 @@
 
 .programs__title--slim {
   content: "";
-  top: -5px;
-  left: 8px;
+    top: 6px;
+    left: 2px;
 
   &::before {
     position: absolute;
     content: "";
     top: -5px;
-    left: -80px;
+    left: -70px;
     width: 50px;
     height: 50px;
     background-color: $green-lighten;
@@ -53,7 +54,7 @@
     position: absolute;
     content: "";
     top: -5px;
-    left: -72px;
+    left: -62px;
     width: 35px;
     height: 49px;
     background-image: url("./../img/icon-cat-slim.svg");
@@ -62,6 +63,9 @@
 }
 
 .programs__title--pro {
+    top: 5px;
+    left: 2px;
+
   &::before {
     position: absolute;
     content: "";
@@ -86,7 +90,7 @@
 }
 
 .programs__text {
-  margin: 23px 0 23px 0;
+  margin: 37px 0 18px 0;
   padding-bottom: 23px;
   box-shadow: 0 1px 0 0 $grey-darken;
   font-family: "Arial", sans-serif;
@@ -103,13 +107,23 @@
     position: absolute;
     content: "";
     top: 6px;
-    right: -35px;
+    right: -48px;
     width: 24px;
     height: 11px;
     background-image: url("./../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+
+.programs__link--slim::after {
+  top: 8px;
+  right: -35px;
+}
+
+.programs__link--pro::after {
+  top: 7px;
+  right: -37px;
 }
 
 .programs__link:hover::after {
@@ -129,8 +143,14 @@
   }
 
   .programs__item {
+    width: 708px;
     min-height: 372px;
-    padding: 80px 50px;
+    padding: 68px 53px 60px 53px;
+    margin: 40px auto 0 auto;
+  }
+
+  .programs__item--pro {
+    margin-top: 29px;
   }
 
   .programs__title {
@@ -138,15 +158,22 @@
     font-size: 36px;
     line-height: 37px;
     left: 0;
+    padding-top: 2px;
   }
 
   .programs__text {
-    width: 340px;
+    width: 375px;
     min-height: 98px;
     box-shadow: none;
     text-align: left;
     font-size: 16px;
     line-height: 24px;
+    margin-top: 31px;
+    margin-bottom: 32px;
+  }
+
+  .programs__text--pro {
+    width: 340px;
   }
 
   .programs__link {
@@ -155,6 +182,7 @@
 
     &::after {
       top: 9px;
+      right: -48px;
     }
   }
 
@@ -167,8 +195,18 @@
     height: 200px;
   }
 
+  .programs__title--slim:before {
+    top: 18px;
+    right: 9px;
+  }
+
+  .programs__title--pro:before {
+    top: 19px;
+    right: 7px;
+  }
+
   .programs__title--slim::after {
-    top: 10px;
+    top: 6px;
     right: 40px;
     left: auto;
     width: 140px;
@@ -176,8 +214,8 @@
   }
 
   .programs__title--pro::after {
-    top: 65px;
-    right: -20px;
+    top: 62px;
+    right: -25px;
     left: auto;
     width: 268px;
     height: 112px;
@@ -185,19 +223,31 @@
 }
 
 @media (min-width: $desktop-width) {
+  .programs {
+    padding: 33px 0;
+  }
+
   .programs__list {
     display: flex;
-    margin-top: 45px;
-    margin-bottom: 30px;
   }
 
   .programs__item {
     width: 570px;
     padding: 30px 50px 0 50px;
+    margin: 0;
   }
 
-  .programs__wrap {
+/*   .programs__wrap {
     margin-top: 45px;
+  } */
+
+  .programs__wrap--slim {
+    margin-top: 38px;
+    margin-left: -1px;
+  }
+
+  .programs__wrap--pro {
+    margin-top: 39px;
   }
 
   .programs__item:nth-child(odd) {
@@ -209,6 +259,11 @@
     margin-bottom: 60px;
   }
 
+  .programs__title--slim,
+  .programs__title--pro {
+    margin-bottom: 80px;
+  }
+
   .programs__title--slim::before,
   .programs__title--pro::before {
     width: 100px;
@@ -218,25 +273,47 @@
   }
 
   .programs__title--slim::before {
-    top: -25px;
+    top: -27px;
+    left: -162px;
   }
 
   .programs__title--slim::after {
     width: 70px;
-    height: 92px;
-    left: -145px;
-    top: -30px;
+    height: 100px;
+    left: -148px;
+    top: -33px;
+  }
+
+  .programs__title--pro::before {
+    left: -163px;
+    top: -27px;
   }
 
   .programs__title--pro::after {
     width: 134px;
     height: 56px;
-    left: -185px;
-    top: -10px;
+    left: -181px;
+    top: -5px;
   }
 
   .programs__text {
     width: 462px;
     margin-bottom: 0;
+  }
+
+  .programs__text--slim,
+  .programs__text--pro {
+    margin: 0;
+    padding-left: 3px;
+    padding-bottom: 5px;
+  }
+
+  .programs__link--slim,
+  .programs__link--pro {
+    margin-left: 3px;
+  }
+
+  .programs__link--pro::after {
+    right: -46px;
   }
 }

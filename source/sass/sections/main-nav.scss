@@ -6,6 +6,7 @@
   margin: 0;
   list-style-type: none;
   padding: 0;
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -16,6 +17,7 @@
   .main-nav__list {
     display: flex;
     margin-left: auto;
+    align-items: flex-start;
   }
 }
 

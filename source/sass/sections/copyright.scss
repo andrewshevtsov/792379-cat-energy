@@ -1,6 +1,5 @@
 .copyright {
   border-top: 1px solid #d9d9d9;
-  padding: 0 20px;
 }
 
 .copyright__text {
@@ -21,15 +20,23 @@
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
-  padding: 25px 0 25px 0;
+  padding: 22px 0 20px 0;
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
     border-top: none;
+    margin-top: -5px;
+    margin-right: auto;
   }
 
   .copyright__link {
     padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    margin-top: -9px;
   }
 }

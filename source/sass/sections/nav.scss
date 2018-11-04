@@ -29,6 +29,7 @@
   .nav-list__item {
     border-bottom: none;
     margin: 0 0 0 30px;
+    padding: 20px 0 9px 0;
   }
 
   .nav-list__link {
@@ -39,11 +40,24 @@
   .nav-list__item--active {
     border-bottom: 2px solid $green-darken;
   }
+
+  .nav-list__item--main {
+    margin-right: 4px;
+  }
+
+  .nav-list__item--catalog {
+    margin-right: 6px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .nav-list__item {
+    margin: 0 0 0 34px;
+  }
+
   .nav-list__link {
     color: $bg-white;
+    letter-spacing: 1px;
   }
 
   .nav-list__link--inner {
@@ -55,6 +69,6 @@
   }
 
   .nav-list__item--active-inner {
-    border-bottom-color: $green-lighten;
+    border-bottom: 2px solid $green-lighten;
   }
 }

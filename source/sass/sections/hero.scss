@@ -3,7 +3,7 @@
   background-image: url("./../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 27px;
   min-height: 305px;
   width: 320px;
   margin: 0 auto;
@@ -17,7 +17,7 @@
 
 .hero__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   color: $bg-white;
   font-size: 36px;
   line-height: 36px;
@@ -46,7 +46,7 @@
     width: 768px;
     position: relative;
     background-image: none;
-    padding: 30px 0 0 90px;
+    padding: 30px 0 0 120px;
     text-align: left;
     min-height: 788px;
   }
@@ -55,13 +55,14 @@
     color: #111111;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 30px;
+    margin-top: 28px;
+    margin-bottom: 39px;
     width: 420px;
   }
 
   .hero__promo-text {
     color: $oswald-m-color;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 24px;
     text-transform: uppercase;
     z-index: 2;
@@ -69,7 +70,8 @@
 
   .hero__image-wrapper {
     z-index: 1;
-    top: 220px;
+    top: 260px;
+    left: 30px;
   }
 }
 
@@ -81,17 +83,18 @@
     box-sizing: border-box;
     min-height: 630px;
     width: 1220px;
+    padding: 0;
   }
 
   .hero__text-wrapper {
-    margin-top: 130px;
-    padding-left: 90px;
+    margin-top: 81px;
+    padding-left: 80px;
   }
 
   .hero__image-wrapper {
     position: relative;
-    top: 51px;
-    left: -60px;
+    top: 29px;
+    left: -50px;
   }
 
   .hero__title {
@@ -102,7 +105,7 @@
     position: relative;
     top: 0;
     left: 0;
-    margin-top: 40px;
+    margin-top: 50px;
     margin-left: 0;
   }
 }

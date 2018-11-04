@@ -27,10 +27,10 @@
       </button>
       <div class="page-header__line page-header__line--bottom"></div>
       <ul class="main-nav__list nav-list">
-        <li class="nav-list__item">
+        <li class="nav-list__item nav-list__item--main">
           <a class="nav-list__link nav-list__link--inner" href="index.html">Главная</a>
         </li>
-        <li class="nav-list__item">
+        <li class="nav-list__item nav-list__item--catalog">
           <a class="nav-list__link nav-list__link--inner" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="nav-list__item nav-list__item--nomrgn-bottomm nav-list__item--active nav-list__item--active-inner">
@@ -44,38 +44,38 @@
       <div class="container container--column container--form">
         <h1 class="title-first title-first--form">Подбор программы</h1>
         <p class="feedback__text feedback__text--form">
-          Заполните анкету и мы подберем программу питания для Вашего кота
+          Заполните анкету и мы подберем<br> программу питания для Вашего кота
         </p>
       </div>
       <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="POST">
         <div class="form__top-wrapper">
           <div class="container">
             <ul class="form__list form__list--underline form__list--desktop form__list--width">
-              <li class="form__item">
+              <li class="form__item form__item--name">
                 <label class="form__label form__label--text" for="cat-name">Имя:*</label>
                 <input class="form__input form__input--text form__input--border" type="text" id="cat-name" name="cat-name" placeholder="Барсик">
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--name">
                 <label class="form__label form__label--text" for="cat-weight">Вес (кг):*</label>
-                <input class="form__input form__input--text form__input--border" type="text" id="cat-weight" name="cat-weight" placeholder="7">
+                <input class="form__input form__input--weight form__input--text form__input--border" type="text" id="cat-weight" name="cat-weight" placeholder="7">
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--name">
                 <label class="form__label form__label--text" for="cat-age">Возраст (лет):</label>
-                <input class="form__input form__input--text form__input--border" type="text" id="cat-age" name="cat-age" placeholder="7">
+                <input class="form__input form__input--age form__input--text form__input--border" type="text" id="cat-age" name="cat-age" placeholder="7">
               </li>
             </ul>
           </div>
           <div class="container">
-            <ul class="form__list form__list--underline form__list--border form__list--width">
-              <li class="form-item">
+            <ul class="form__list form__list--radio form__list--underline form__list--border form__list--width">
+              <li class="form__item form__item--radio">
                 <input class="form__input form__input--radio visually-hidden" type="radio" id="drying" name="target" checked>
                 <label for="drying" class="form__label form__label--radio">Похудение</label>
               </li>
-              <li class="form-item">
+              <li class="form__item form__item--radio">
                 <input class="form__input form__input--radio visually-hidden" type="radio" id="gain" name="target">
                 <label for="gain" class="form__label form__label--radio">Набор массы</label>
               </li>
-              <li class="form-item">
+              <li class="form__item form__item--radio">
                 <input class="form__input form__input--radio visually-hidden" type="radio" id="unknown" name="target">
                 <label for="unknown" class="form__label form__label--radio">Не знаю (нужен ваш совет)</label>
               </li>
@@ -91,7 +91,7 @@
               <label class="form__label form__label--email" for="email">E-MAIL:*</label>
               <input class="form__input form__input--email" type="email" id="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" required>
             </li>
-            <li class="form__item form__item--contacts">
+            <li class="form__item form__item--contacts form__item--tel">
               <label class="form__label form__label--phone" for="phone">Телефон:*</label>
               <input class="form__input form__input--phone" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
             </li>
@@ -104,25 +104,25 @@
           </div>
         </div>
         <div class="form__title-wrap form__title-wrap--additional">
-          <h3 class="title-third title-third--form">Дополнительно</h3>
+          <h3 class="title-third title-third--form title-third--form-additional">Дополнительно</h3>
         </div>
-        <div class="container container--column container--form">
+        <div class="container container--column container--form-checkboxes">
           <ul class="form__list form__list--checkboxes">
-            <li class="form__item form__item--checkbox">
+            <li class="form__item form__item--checkbox form__item--marginbottom">
               <input class="form__input form__input--checkbox visually-hidden" type="checkbox" id="addon-1" name="addon-1" checked>
               <label class="form__label form__label--checkbox" for="addon-1">Сахарозаменитель</label>
             </li>
-            <li class="form__item form__item--checkbox">
+            <li class="form__item form__item--checkbox form__item--marginbottom">
               <input class="form__input form__input--checkbox visually-hidden" type="checkbox" id="addon-2" name="addon-2">
               <label class="form__label form__label--checkbox" for="addon-2">Питьевая вода</label>
             </li>
             <li class="form__item form__item--checkbox">
               <input class="form__input form__input--checkbox visually-hidden" type="checkbox" id="addon-3" name="addon-3">
-              <label class="form__label form__label--checkbox" for="addon-3">Молоко</label>
+              <label class="form__label form__label--checkbox form__label--nomargin" for="addon-3">Молоко</label>
             </li>
             <li class="form__item form__item--checkbox">
               <input class="form__input form__input--checkbox visually-hidden" type="checkbox" id="addon-4" name="addon-4">
-              <label class="form__label form__label--checkbox" for="addon-4">Витамины</label>
+              <label class="form__label form__label--checkbox form__label--nomargin" for="addon-4">Витамины</label>
             </li>
           </ul>
           <div class="form__text-wrap">
@@ -135,18 +135,18 @@
   </main>
     <footer class="footer">
   <div class="footer__contacts contacts">
-    <div class="container contacts__container">
-      <b class="promo-text promo-text--bold">Приглашаем к сотрудничеству дилеров!</b>
+    <div class="container contacts__container contacts__container--form">
+      <b class="promo-text promo-text--bold">Приглашаем<br> к сотрудничеству дилеров!</b>
       <p class="contacts__text contacts__text--normal contacts__text--no-margin contacts__text--margin-left">
-        <span>ул. Большая Конюшенная, д. 19/8</span>
-        <span>Санкт-Петербург</span>
+        <span class="contacts__address-top">ул. Большая Конюшенная, д. 19/8</span>
+        <span class="contacts__address-bottom">Санкт-Петербург</span>
       </p>
     </div>
   </div>
   <div class="footer__map-wrapper">
     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac84e54f676c0ae0e91cf360f4c996bdb4d1cc49027b80ba8a810442744100e36&amp;source=constructor" width="100%" height="365" frameborder="0" class="footer__interactive-map"></iframe>
   </div>
-  <div class="container footer__container">
+  <div class="container footer__container footer__container--form">
     <div class="footer__logo-wrapper">
       <img class="image logo logo__footer" src="img/logo-footer.svg" alt="Cat Energy" width="130" height="25">
     </div>

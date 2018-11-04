@@ -15,7 +15,7 @@
 }
 
 .additional-products__item {
-  padding-bottom: 20px;
+  padding-bottom: 17px;
   border-bottom: 1px solid $grey-darken;
 }
 
@@ -30,7 +30,7 @@
 @media (min-width: $tablet-width) {
   .additional-products {
     padding: 0 30px 0 30px;
-    margin-bottom: 40px;
+    margin-bottom: 73px;
   }
 
   .additional-products__list {
@@ -38,13 +38,11 @@
     display: flex;
     flex-direction: column;
     width: 708px;
+    margin-bottom: 69px;
   }
 
   .additional-products__item {
-    padding-top: 20px;
-    padding-right: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px;
+    padding: 27px 37px 27px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -60,16 +58,41 @@
 
   .additional-products__text {
     margin-left: auto;
+    margin-top: 2px;
   }
 
   .additional-products__text--left {
-    width: 225px;
+    width: 135px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 49px;
+  }
+
+  .additional-products__text--water {
+    margin-right: 25px;
+  }
+
+  .additional-products__text--milk {
+    margin-right: 7px;
+  }
+
+  .additional-products__text--vitamins {
+    margin-right: 45px;
+  }
+
+  .additional-products__text--right {
     font-size: 16px;
     line-height: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .additional-products {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
   .additional-products__wrapper-desktop {
     display: flex;
     justify-content: center;
@@ -80,10 +103,11 @@
     width: 895px;
     margin-top: 0;
     margin-right: 80px;
+    margin-bottom: 86px;
   }
 
   .additional-products__item {
-    padding: 16px 0;
+    padding: 15px 0 16px;
     flex-wrap: nowrap;
   }
 
@@ -93,7 +117,7 @@
 
   .additional-products__item--last {
     border-bottom: 1px solid $grey-darken;
-    padding-bottom: 13px;
+    padding-bottom: 16px;
   }
 
   .additional-products__text--left {
@@ -102,7 +126,10 @@
 
   .additional-products__text {
     width: 245px;
-    margin: 0;
-    margin-right: auto;
+    margin: 8px auto 0 80px;
+  }
+
+  .additional-products__text--right {
+    margin-right: -42px;
   }
 }
