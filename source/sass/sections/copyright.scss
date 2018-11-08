@@ -23,6 +23,14 @@
   padding: 22px 0 20px 0;
 }
 
+.copyright__link:hover svg {
+  fill: $green-lighten;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .copyright {
     border-top: none;

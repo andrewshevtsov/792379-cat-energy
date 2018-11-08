@@ -191,6 +191,10 @@
       left: 15px;
     }
   }
+
+  .about__text-fragment--clock {
+    margin-right: 8px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -199,6 +203,7 @@
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 62px;
+    margin-bottom: 19px;
   }
 
   .about__list {

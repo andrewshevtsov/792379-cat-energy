@@ -10,10 +10,18 @@
   flex-direction: column;
 }
 
+.catalog__row-left {
+  width: 150px;
+}
+
 .catalog__item {
   margin-bottom: 0;
-  padding-bottom: 26px;
+  padding-bottom: 61px;
   border-bottom: 1px solid #e6e6e6;
+}
+
+.catalog__item:last-child {
+  padding-bottom: 26px;
 }
 
 .catalog__row {
@@ -29,7 +37,6 @@
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
-  padding-left: 5px;
 }
 
 .catalog__datalist--item {
@@ -38,6 +45,7 @@
 }
 
 .catalog__row-right {
+  position: relative;
   width: 150px;
 }
 
@@ -52,31 +60,33 @@
     width: 324px;
     min-height: 431px;
     border-bottom: none;
-    background-color: $bg-gray;
-    margin-bottom: 140px;
-    padding: 0;
+    padding: 0 0 139px 0;
     box-sizing: border-box;
   }
 
-  .catalog__item--none-mbottom {
-    margin-bottom: 70px;
-  }
-
-  .catalog__item--last {
-    background-color: transparent;
-    border: 1px solid $bg-gray;
+  .catalog__item:nth-last-child(-n+2) {
+    padding-bottom: 68px;
   }
 
   .catalog__row {
     flex-direction: column;
+    background-color: $bg-gray;
+    padding: 0 0 40px 0;
   }
 
   .catalog__item:nth-child(2n) {
     margin-left: auto;
   }
 
+  .catalog__item:last-child {
+    padding: 0;
+  }
+
   .catalog__row-left {
     position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   .catalog__row-right {
@@ -84,6 +94,11 @@
     min-height: 155px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: -20px;
+  }
+
+  .catalog__row-right--bigbox {
+    margin-top: -56px;
   }
 
   .catalog__datalist {
@@ -106,7 +121,7 @@
 @media (min-width: $desktop-width) {
   .catalog {
     padding: 0 0 0 81px;
-    margin-bottom: 77px;
+    margin-bottom: 75px;
   }
 
   .catalog__list {
@@ -116,7 +131,7 @@
 
   .catalog__item {
     width: 245px;
-    margin-bottom: 142px;
+    padding-bottom: 142px;
   }
 
   .catalog__item:nth-child(2n) {
@@ -127,11 +142,29 @@
     margin-right: 80px;
   }
 
+  .catalog__item:nth-last-child(-n+4) {
+    padding-bottom: 0;
+  }
+
   .catalog__item--no-mrgnbtm {
     margin-bottom: 0;
   }
 
+  .catalog__row {
+    padding-bottom: 42px;
+    background-color: $bg-gray;
+  }
+
   .catalog__row-right {
     width: 170px;
+  }
+
+  .catalog__text {
+    margin-right: 2px;
+  }
+
+  .catalog__item:last-child {
+    padding: 0;
+    border: none;
   }
 }

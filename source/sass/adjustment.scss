@@ -18,6 +18,18 @@ img {
   height: auto;
 }
 
+.logo__footer:hover {
+  opacity: 0.8;
+}
+
+.logo__footer:active {
+  opacity: 0.6;
+}
+
+input:invalid {
+  outline: 2px solid #ff8282;
+}
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -73,6 +85,7 @@ a {
   width: 80px;
   text-align: left;
   margin-top: 22px;
+  letter-spacing: -0.5px;
 }
 
 .title-third--form {
@@ -135,7 +148,10 @@ a {
 
   &--green-catalog {
     @include btn--green;
-    padding: 10px 110px;
+    position: absolute;
+    top: 144px;
+    left: -140px;
+    padding: 10px 109px;
     display: inline-block;
   }
 
@@ -149,6 +165,11 @@ a {
     display: inline-block;
     padding: 12px 100px;
   }
+}
+
+.btn--green-form {
+  padding-left: 78px;
+  padding-right: 78px;
 }
 
 .btn--hero-mobile {
@@ -191,7 +212,7 @@ a {
 }
 
 .btn--hover-catalog:active {
-  opacity: 0.3;
+  opacity: 0.8;
   color: #c6c6c6;
 }
 
@@ -278,6 +299,9 @@ a {
   }
 
   .btn--green-catalog {
+    position: relative;
+    top: 0;
+    left: 0;
     padding: 10px 0;
     width: 249px;
     margin-left: auto;
@@ -295,7 +319,7 @@ a {
     margin-top: 2px;
     font-size: 20px;
     line-height: 20px;
-    padding: 16px 68px 16px 63px;
+    padding: 16px 66px 16px 60px;
     width: 283px;
     max-height: 52px;
   }
@@ -339,7 +363,9 @@ a {
   }
 
   .btn--green-catalog {
-    width: 170px;
+    width: 169px;
+    top: 2px;
+    left: -1px;
   }
 
   .btn--gray-catalog {
@@ -353,9 +379,10 @@ a {
   }
 
   .btn--green-form {
-    margin-left: 0;
-    margin-right: 100px;
+    margin-left: 1px;
+    margin-right: 80px;
     width: 568px;
+    padding-left: 68px;
   }
 
   .title-third--additional {
@@ -383,5 +410,13 @@ a {
   .title-third--form {
     margin-left: 0;
     width: 570px;
+  }
+
+  .title-third--catalog {
+    margin-bottom: 19px;
+  }
+
+  .title-first--form {
+    padding-top: 74px;
   }
 }

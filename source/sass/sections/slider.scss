@@ -1,6 +1,5 @@
 .slider__content-wrapper {
   margin: 0 auto;
-  padding: 0 20px;
   box-sizing: border-box;
 }
 
@@ -197,6 +196,11 @@
 
   .slider__range-view:hover::before {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
+
+  .slider__range-view:hover::after {
+    cursor: pointer;
   }
 
   .slider__range-view:active::before {
@@ -212,15 +216,17 @@
 @media (min-width: $desktop-width) {
   .slider__content-wrapper {
     height: 465px;
-    padding-top: 275px;
+    padding: 0 77px 0 0;
+    margin: 0 0 0 129px;
+    background: linear-gradient(90deg,#f2f2f2 44.7%,#eaeaea 0);
   }
 
   .slider__slides {
     position: relative;
-    top: -20px;
-    left: 24px;
-    padding-right: 36px;
-    padding-bottom: 2px;
+    top: -193px;
+    left: 0;
+    padding: 0;
+    margin: 0 0 43px 0;
   }
 
   .slider__image-wrapper {
@@ -258,8 +264,22 @@
   }
 
   .slider__control {
-    padding: 0;
-    margin-top: 14px;
-    margin-left: 16px;
+    top: -200px;
+    left: 0;
+  }
+
+  .slider__range-view:before {
+    top: -16px;
+    left: 197px;
+  }
+
+  .slider__range-view:after {
+    top: -2px;
+    left: 211px;
+  }
+
+  .slider__range-view:active::after {
+    top: -1px;
+    left: 212px;
   }
 }

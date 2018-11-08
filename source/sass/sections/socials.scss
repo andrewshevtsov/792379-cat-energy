@@ -25,12 +25,19 @@
 .socials__svg-instagram {
   width: 17px;
   height: 17px;
-  fill: #666666;
 }
 
 .socials__svg-fb {
   width: 10px;
   height: 19px;
+}
+
+.socials__link:hover svg {
+  fill: $green-lighten;
+}
+
+.socials__link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -47,5 +54,22 @@
   .socials__svg-fb {
     width: 14px;
     height: 28px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .socials__link--vkontakte {
+    top: 6px;
+    left: 5px;
+    }
+
+  .socials__link--instagram {
+    top: 6px;
+    left: -4px;
+  }
+
+  .socials__link--facebook {
+    top: 6px;
+    left: -11px;
   }
 }

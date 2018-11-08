@@ -7,16 +7,25 @@
   }
 
   .image__catalog--s {
+    position: relative;
+    top: -45px;
     width: 161px;
     height: 172px;
     object-fit: cover;
-    margin-top: -45px;
+    margin: 0;
   }
 
   .image__catalog--l {
+    position: relative;
+    top: -80px;
+    left: 0px;
     width: 195px;
     height: 208px;
     object-fit: cover;
-    margin-top: -81px;
+    margin: 0 0 0 0;
+  }
+
+  .image--poly {
+    font-family: "object-fit: cover;";
   }
 }

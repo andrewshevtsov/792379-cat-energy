@@ -129,7 +129,7 @@
 .programs__link:hover::after {
   background-image: url("./../img/icon-right-arrow-verylong.svg");
   width: 33px;
-  right: -45px;
+  right: -60px;
 }
 
 .programs__link:active,
@@ -201,13 +201,13 @@
   }
 
   .programs__title--pro:before {
-    top: 19px;
+    top: 18px;
     right: 7px;
   }
 
   .programs__title--slim::after {
-    top: 6px;
-    right: 40px;
+    top: 8px;
+    right: 38px;
     left: auto;
     width: 140px;
     height: 194px;
@@ -236,10 +236,6 @@
     padding: 30px 50px 0 50px;
     margin: 0;
   }
-
-/*   .programs__wrap {
-    margin-top: 45px;
-  } */
 
   .programs__wrap--slim {
     margin-top: 38px;

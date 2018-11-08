@@ -16,3 +16,9 @@
     width: 155px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .promo-text--form {
+    padding-top: 4px;
+  }
+}

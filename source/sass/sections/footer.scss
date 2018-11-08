@@ -28,22 +28,11 @@
   z-index: 1;
   font-size: 0;
   line-height: 0;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 130px;
-    left: 145px;
-    width: 55px;
-    height: 53px;
-    background-image: url("./../img/map-pin.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
 }
 
 .footer__interactive-map {
   min-height: 365px;
+  border: 0;
 }
 
 .footer__list {
@@ -89,12 +78,6 @@
 
   .footer__map-wrapper {
     min-height: 396px;
-
-    &::before {
-      left: 50%;
-      top: 160px;
-      transform: translateX(-45px);
-    }
   }
 }
 
@@ -114,11 +97,6 @@
 
   .footer__map-wrapper {
     min-height: 400px;
-
-    &::before {
-      top: 155px;
-      transform: translateX(-50px);
-    }
   }
 
   .footer__logo-wrapper {
@@ -131,5 +109,13 @@
   .footer__list {
     margin: -24px 380px 0;
     padding-left: 25px;
+  }
+
+  .footer__container--catalog {
+    padding-top: 68px;
+  }
+
+  .footer__container--form {
+    padding: 68px 0 62px;
   }
 }
