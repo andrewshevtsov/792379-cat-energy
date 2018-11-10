@@ -10,7 +10,7 @@
   box-sizing: border-box;
 
   @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
-    background-image: url("../../img/index-background-mobile@2x.jpg");
+    background-image: url("./../img/index-background-mobile@2x.jpg");
     background-size: 320px auto;
   }
 }
