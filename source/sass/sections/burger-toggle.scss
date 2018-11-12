@@ -21,6 +21,7 @@
 
 // кнопка закрытия nav
 .burger-toggle--close {
+  display: none;
   top: 23px;
 
   &::before {

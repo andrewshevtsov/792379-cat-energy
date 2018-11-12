@@ -119,49 +119,65 @@
   .example {
     position: relative;
     display: flex;
-    box-shadow: inset 0 -465px 0 0 $bg-gray;
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  .example::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 77%;
+    background-image: linear-gradient(90deg,#f2f2f2 75%,#eaeaea 25%);
   }
 
   .example__container {
     width: 1220px;
     flex-direction: row;
-    align-items: center;
+  }
+
+  .example__container-title {
+    margin-bottom: 147px;
   }
 
   .example__content-wrapper {
-    width: 40%;
-    margin: -202px 0 0;
-    padding: 0 0 60px 0;
-    max-width: none;
+    position: relative;
+    top: 5px;
+    left: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    z-index: 1;
+    flex: 0 0 40%;
+    max-width: 40%;
   }
 
   .example__wrap {
     flex-direction: column;
     align-items: flex-start;
-    position: relative;
-    left: 0;
-    top: 188px;
+  }
+
+  .example__list {
+    margin: 0 0 40px 0;
   }
 
   .example__title {
     margin: 0;
-    position: relative;
-    top: 33px;
   }
 
   .example__text {
-    position: relative;
-    left: 0;
-    top: 163px;
-    width: 435px;
     text-align: left;
+  }
+
+  .example__text--top {
+    margin: 0 0 67px 0;
+    width: 435px;
   }
 
   .example__text--bottom {
     margin-left: 0;
-    top: 16px;
+    width: 435px;
   }
 
   .example__text--sum {
@@ -170,7 +186,14 @@
 
   .example__slider {
     display: flex;
-    width: 60%;
-    margin-top: 140px;
+    max-width: 60%;
+    margin: initial;
+    flex: 0 0 60%;
+  }
+}
+
+@media (min-width: 2440px) {
+  .example::after {
+    background-image: linear-gradient(90deg,#f2f2f2 60%,#eaeaea 60%);
   }
 }

@@ -41,7 +41,7 @@
 .contacts--catalog {
   margin: 0;
   width: 320px;
-  padding: 20px;
+  padding: 23px 0 20px 0;
   background-color: $bg-gray;
 }
 
@@ -51,12 +51,15 @@
     border-left: none;
     border-right: none;
     padding: 22px 0 15px;
+    min-width: 768px;
   }
 
   .contacts__container {
-    width: 768px;
+    min-width: 768px;
     padding: 42px 71px;
   }
+
+  // padding: 43px 57px 42px 56px;
 
   .contacts--tablet {
     border: none;
@@ -89,6 +92,7 @@
   .contacts {
     margin: 0;
     background-color: $bg-white;
+    min-width: initial;
     width: 570px;
     box-sizing: border-box;
     z-index: 2;
@@ -97,6 +101,10 @@
     transform: translateX(-40px);
     padding: 0;
     position: absolute;
+  }
+
+  .contacts--catalog {
+    top: 95px;
   }
 
   .contacts__text--normal {
@@ -108,6 +116,7 @@
   }
 
   .contacts__container {
+    min-width: initial;
     padding: 63px 89px 60px 76px;
   }
 

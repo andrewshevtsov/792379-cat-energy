@@ -28,47 +28,49 @@
 @media (min-width: $tablet-width) {
   .nav-list__item {
     border-bottom: none;
-    margin: 0 0 0 30px;
-    padding: 20px 0 9px 0;
+    padding: 20px 18px 9px 18px;
+  }
+
+  .nav-list__item:last-child {
+    padding-right: 0;
   }
 
   .nav-list__link {
     font-size: 18px;
     line-height: 24px;
+    padding-bottom: 7px;
   }
 
-  .nav-list__item--active {
+  .nav-list__link--active {
     border-bottom: 2px solid $green-darken;
-  }
-
-  .nav-list__item--main {
-    margin-right: 4px;
-  }
-
-  .nav-list__item--catalog {
-    margin-right: 6px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .nav-list__item {
-    margin: 0 0 0 34px;
+    padding: 20px 35px 0 0;
+  }
+
+  .nav-list__item:first-child {
+    padding-left: 0;
+    margin-left: 0;
   }
 
   .nav-list__link {
     color: $bg-white;
     letter-spacing: 1px;
+    padding-bottom: 8px;
   }
 
   .nav-list__link--inner {
     color: $text-dark;
   }
 
-  .nav-list__item--active {
+  .nav-list__link--active {
     border-bottom-color: $bg-white;
   }
 
-  .nav-list__item--active-inner {
+  .nav-list__link--active-inner {
     border-bottom: 2px solid $green-lighten;
   }
 }

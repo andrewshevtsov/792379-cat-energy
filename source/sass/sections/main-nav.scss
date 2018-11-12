@@ -18,11 +18,15 @@
     display: flex;
     margin-left: auto;
     align-items: flex-start;
+    flex-flow: row wrap;
+    max-width: 498px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav__list {
+    justify-content: flex-start;
+    margin-left: auto;
     z-index: 2;
   }
 }

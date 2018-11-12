@@ -192,7 +192,11 @@
     }
   }
 
-  .about__text-fragment--clock {
+  .about__text-fragment1--clock {
+    margin-right: -1px;
+  }
+
+  .about__text-fragment2--clock {
     margin-right: 8px;
   }
 }
@@ -207,8 +211,7 @@
   }
 
   .about__list {
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .about__list-item:nth-child(-n+2) {
@@ -217,5 +220,13 @@
 
   .about__list-item:not(:nth-child(2n)) {
     margin-right: 0;
+  }
+
+  .about__list-item:not(:nth-child(4n)){
+    margin-right: 81px;
+  }
+
+  .about__list-item--four {
+    width: 244px;
   }
 }

@@ -14,8 +14,6 @@ var webp = require('gulp-webp');
 var svgstore = require('gulp-svgstore');
 var posthtml = require('gulp-posthtml');
 var include = require('posthtml-include');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
 var del = require('del');
 
 gulp.task('css', function () {
@@ -33,15 +31,6 @@ gulp.task('css', function () {
     .pipe(gulp.dest('build/css'))
     .pipe(server.stream());
 });
-
-// экспериментальный таск для скриптов
-// gulp.task('scripts', function() {
-//   return gulp.src('source/js/**/*.js')
-//     .pipe(concat('build.js'))
-//     .pipe(gulp.dest('source/js'))
-//     .pipe(uglify())
-//     .pipe(gulp.dest('source/js'))
-// });
 
 gulp.task('images', function () {
   return gulp.src('source/img/**/*.{png,jpg,svg}')
