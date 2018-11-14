@@ -142,13 +142,15 @@
 
 .form__title-wrap {
   position: relative;
+  width: 280px;
+  margin: 0 auto;
 
   &::after {
     position: absolute;
     top: 15px;
-    right: -20px;
+    right: -920%;
     content: "";
-    width: 99px;
+    width: 948%;
     height: 3px;
     background-color: $green-lighten;
   }
@@ -179,6 +181,8 @@
   flex-direction: column;
   margin-bottom: 20px;
   padding-top: 12px;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .form__label--comment {
@@ -190,9 +194,9 @@
   &::after {
     position: absolute;
     top: 27px;
-    right: -20px;
+    right: -900%;
     content: "";
-    width: 158px;
+    width: 949%;
     height: 3px;
     background-color: $green-lighten;
   }
@@ -351,20 +355,28 @@
     padding-left: 18px;
   }
 
+  .form__top-wrapper {
+    margin-bottom: 10px;
+  }
+
+  .form__title-wrap {
+    min-width: 708px;
+  }
+
   .form__title-wrap::before {
     position: absolute;
     top: 22px;
-    left: -30px;
+    left: -900%;
     content: "";
-    width: 30px;
+    width: 900%;
     height: 3px;
     background-color: $green-lighten;
   }
 
   .form__title-wrap::after {
-    width: 145px;
     top: 22px;
-    right: -30px;
+    right: -900%;
+    width: 915%;
   }
 
   .form__input--email,
@@ -390,16 +402,16 @@
 
   .form__label--comment::after {
     top: 21px;
-    right: -30px;
-    width: 480px;
+    right: -900%;
+    width: 963%;
   }
 
   .form__label--comment::before {
     position: absolute;
     top: 21px;
-    left: -30px;
+    left: -900%;
     content: "";
-    width: 30px;
+    width: 900%;
     height: 3px;
     background-color: $green-lighten;
   }
@@ -413,7 +425,7 @@
   }
 
   .form__title-wrap--additional::after {
-    width: 445px;
+    width: 958%;
   }
 
   .form__list--checkboxes {
@@ -440,7 +452,9 @@
   }
 
   .form__comment-wrapper {
+    min-width: 708px;
     padding-top: 0;
+    margin-bottom: 20px;
   }
 
   .container--form-checkboxes {
@@ -489,6 +503,10 @@
     margin: 0;
   }
 
+  .form__title-wrap {
+    min-width: 1300px;
+  }
+
   .form__title-wrap::before,
   .form__label--comment::before {
     left: -955%;
@@ -497,7 +515,7 @@
 
   .form__title-wrap::after {
     width: 920%;
-    right: -865%;
+    right: -863%;
   }
 
   .form__list--contacts {
@@ -527,7 +545,7 @@
   }
 
   .form__label--comment::after {
-    width: 970%;
+    width: 971%;
     right: -888%;
   }
 
@@ -543,7 +561,7 @@
 
   .form__list--checkboxes {
     padding: 0;
-    width: initial;
+    width: auto;
     justify-content: flex-start;
     margin-top: 67px;
     margin-left: 14px;
@@ -559,7 +577,8 @@
   }
 
   .form__comment-wrapper {
-    margin-bottom: 22px;
+    min-width: 1300px;
+    margin-bottom: 23px;
   }
 
   .form__item--checkboxmilk {

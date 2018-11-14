@@ -8,6 +8,12 @@
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0 auto;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    min-width: 768px;
+  }
 }
 
 .example__content-wrapper {
@@ -186,7 +192,7 @@
   .example__slider {
     display: flex;
     max-width: 60%;
-    margin: initial;
+    margin: 0;
   }
 }
 

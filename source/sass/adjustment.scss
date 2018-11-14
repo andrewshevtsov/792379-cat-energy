@@ -101,6 +101,7 @@ a {
 }
 
 .title-third--additional {
+  position: relative;
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
@@ -111,9 +112,9 @@ a {
   &::after {
     position: absolute;
     top: 15px;
-    right: 0;
+    right: -190%;
     content: "";
-    width: 53px;
+    width: 200%;
     height: 3px;
     background-color: $green-lighten;
   }
@@ -246,26 +247,28 @@ a {
     font-size: 36px;
     line-height: 36px;
     margin-left: 39px;
-    margin-top: 11px;
+    margin-top: 0;
   }
 
   .title-third--additional {
     font-size: 36px;
     line-height: 36px;
-    margin: 0 0 65px 37px;
+    margin: 0 0 65px 0;
+    padding: 0 0 0 37px;
   }
 
   .title-third--additional::after {
-    top: 20px;
-    width: 328px;
+    top: 22px;
+    right: -950%;
+    width: 992%;
   }
 
   .title-third--additional::before {
     position: absolute;
-    top: 20px;
-    left: 0;
+    top: 22px;
+    left: -829%;
     content: "";
-    width: 28px;
+    width: 829%;
     height: 3px;
     background-color: $green-lighten;
   }
@@ -386,19 +389,20 @@ a {
   }
 
   .title-third--additional {
+    padding: 0;
     margin-left: 0;
     margin-bottom: 80px;
   }
 
   .title-third--additional::before {
-    top: 22px;
+    top: 23px;
     left: -938%;
     width: 935%;
   }
 
   .title-third--additional::after {
-    top: 22px;
-    width: 950%;
+    top: 23px;
+    width: 952%;
     right: -881%;
   }
 

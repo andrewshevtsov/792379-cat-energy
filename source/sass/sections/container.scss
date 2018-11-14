@@ -9,6 +9,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -43,6 +44,10 @@
   .container--form-list {
     width: 568px;
     margin-left: 0;
+  }
+
+  .container--textarea {
+    margin: 0;
   }
 
   .container--formpage-checkboxes {
